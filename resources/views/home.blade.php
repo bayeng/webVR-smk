@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-    <main class="relative isolate">
+    <main class="isolate bg-[#2B2B2B]">
         {{-- <section id="home" class="bg-white pt-36 pb-14 lg:pt-0">
             <div class="container">
                 <div class="flex flex-wrap lg:px-5">
@@ -54,425 +54,420 @@
             <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
         </div> --}}
 
-        <div class="bg-[#2B2B2B]">
+        <!-- Background -->
+        <div class="relative isolate overflow-hidden pt-14">
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                aria-hidden="true">
+                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+            <div class="flex flex-wrap py-10 lg:px-5 lg:py-0">
+                <div class="w-full self-center px-10 lg:w-1/2" data-aos="fade-right" data-aos-duration="500"
+                    data-aos-easing="ease-in-out">
+                    <h2 class="text-2xl font-semibold leading-relaxed text-white">Welcome to</h2>
+                    <h1 class="text-7xl font-bold mb-5 text-white">VR Lab - SMK</h1>
+                    <p class="font-medium leading-relaxed mb-5 text-white">Berinteraksi dengan dunia
+                        maya melalui
+                        headset VR, sarana input seperti sensor gerakan, dan
+                        visual yang ciamik </p>
 
-
-            <main class="isolate">
-                <!-- Background -->
-                <div class="relative isolate -z-10 overflow-hidden pt-14">
-                    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-                        aria-hidden="true">
-                        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-                            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap py-10 lg:px-5 lg:py-0">
-                        <div class="w-full self-center px-10 lg:w-1/2" data-aos="fade-up">
-                            <h2 class="text-2xl font-semibold leading-relaxed text-white">Welcome to</h2>
-                            <h1 class="text-7xl font-bold mb-5 text-white">VR Lab - SMK</h1>
-                            <p class="font-medium leading-relaxed mb-5 text-white">Berinteraksi dengan dunia
-                                maya melalui
-                                headset VR, sarana input seperti sensor gerakan, dan
-                                visual yang ciamik </p>
-
-                            <button type="button"
-                                class="inline-flex items-center rounded-full bg-[#06E3FF] px-[78px] py-[21px] text-lg font-semibold text-[#2B2B2B] shadow-sm hover:bg-slate-500 hover:text-white transition duration-300 ease-in-out">
-                                <h1>Experience</h1>
-                                <img src="img/icon/vr.png" class="h-[32px] mx-[20px]" alt="">
-                            </button>
-                        </div>
-
-                        <div class="w-full self-end px-9 lg:w-1/2" data-aos="fade-up">
-                            <div class="mt-10">
-                                <img src="img/ilustrasi.png" class="max-w-full mx-auto" alt="VR Man">
-                            </div>
-                        </div>
-                    </div>
+                    <button type="button"
+                        class="inline-flex items-center rounded-full bg-[#06E3FF] px-[78px] py-[21px] text-lg font-semibold text-[#2B2B2B] shadow-sm hover:bg-slate-500 hover:text-white transition duration-300 ease-in-out">
+                        <h1>Experience</h1>
+                        <img src="img/icon/vr.png" class="h-[32px] mx-[20px]" alt="VR button">
+                    </button>
                 </div>
 
-
-                <!-- Product section -->
-                <div class="pt-24 sm:pt-32">
-                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                        <div class="mx-auto max-w-2xl text-center">
-                            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our Product</h2>
-                            <p class="mt-2 text-lg leading-8 text-white">Learn how to grow your business with our expert
-                                advice.</p>
-                        </div>
-                        <div
-                            class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                            <article class="flex flex-col items-start justify-between">
-                                <div class="relative w-full">
-                                    <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
-                                        alt=""
-                                        class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-                                    <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-                                </div>
-                                <div class="max-w-xl">
-                                    <div class="mt-8 flex items-center gap-x-4 text-xs">
-                                        <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-                                        <a href="#"
-                                            class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600">Marketing</a>
-                                    </div>
-                                    <div class="group relative">
-                                        <h3
-                                            class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
-                                            <a href="#">
-                                                <span class="absolute inset-0"></span>
-                                                Boost your conversion rate
-                                            </a>
-                                        </h3>
-                                        <p class="mt-5 line-clamp-3 text-sm leading-6 text-white">Illo sint voluptas.
-                                            Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo
-                                            necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel.
-                                            Iusto corrupti dicta.</p>
-                                    </div>
-                                    <div class="relative mt-8 flex items-center gap-x-4">
-                                        <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt="" class="h-10 w-10 rounded-full bg-gray-100">
-                                        <div class="text-sm leading-6">
-                                            <p class="font-semibold text-white">
-                                                <a href="#">
-                                                    <span class="absolute inset-0"></span>
-                                                    Michael Foster
-                                                </a>
-                                            </p>
-                                            <p class="text-white">Co-Founder / CTO</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="flex flex-col items-start justify-between">
-                                <div class="relative w-full">
-                                    <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
-                                        alt=""
-                                        class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-                                    <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-                                </div>
-                                <div class="max-w-xl">
-                                    <div class="mt-8 flex items-center gap-x-4 text-xs">
-                                        <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-                                        <a href="#"
-                                            class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600">Marketing</a>
-                                    </div>
-                                    <div class="group relative">
-                                        <h3
-                                            class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
-                                            <a href="#">
-                                                <span class="absolute inset-0"></span>
-                                                Boost your conversion rate
-                                            </a>
-                                        </h3>
-                                        <p class="mt-5 line-clamp-3 text-sm leading-6 text-white">Illo sint voluptas.
-                                            Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo
-                                            necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel.
-                                            Iusto corrupti dicta.</p>
-                                    </div>
-                                    <div class="relative mt-8 flex items-center gap-x-4">
-                                        <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt="" class="h-10 w-10 rounded-full bg-gray-100">
-                                        <div class="text-sm leading-6">
-                                            <p class="font-semibold text-white">
-                                                <a href="#">
-                                                    <span class="absolute inset-0"></span>
-                                                    Michael Foster
-                                                </a>
-                                            </p>
-                                            <p class="text-white">Co-Founder / CTO</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="flex flex-col items-start justify-between">
-                                <div class="relative w-full">
-                                    <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
-                                        alt=""
-                                        class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-                                    <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-                                </div>
-                                <div class="max-w-xl">
-                                    <div class="mt-8 flex items-center gap-x-4 text-xs">
-                                        <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-                                        <a href="#"
-                                            class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600">Marketing</a>
-                                    </div>
-                                    <div class="group relative">
-                                        <h3
-                                            class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
-                                            <a href="#">
-                                                <span class="absolute inset-0"></span>
-                                                Boost your conversion rate
-                                            </a>
-                                        </h3>
-                                        <p class="mt-5 line-clamp-3 text-sm leading-6 text-white">Illo sint voluptas.
-                                            Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo
-                                            necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel.
-                                            Iusto corrupti dicta.</p>
-                                    </div>
-                                    <div class="relative mt-8 flex items-center gap-x-4">
-                                        <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt="" class="h-10 w-10 rounded-full bg-gray-100">
-                                        <div class="text-sm leading-6">
-                                            <p class="font-semibold text-white">
-                                                <a href="#">
-                                                    <span class="absolute inset-0"></span>
-                                                    Michael Foster
-                                                </a>
-                                            </p>
-                                            <p class="text-white">Co-Founder / CTO</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <!-- More posts... -->
-                        </div>
-                        <div class="flex w-full justify-center mt-20">
-                            <a href="#"
-                                class="relative z-10 rounded-full bg-slate-300 px-[78px] py-[21px] font-medium text-black hover:bg-slate-600">More
-                                Post</a>
-                        </div>
+                <div class="w-full self-end px-9 lg:w-1/2" data-aos="fade-up" data-aos-duration="500"
+                    data-aos-easing="ease-in-out">
+                    <div class="mt-10">
+                        <img src="img/ilustrasi.png" class="max-w-full mx-auto" alt="VR Man">
                     </div>
                 </div>
+            </div>
+        </div>
 
 
-
-                <!-- Image section -->
-                <div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
-                    <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2894&q=80"
-                        alt="" class="aspect-[9/4] w-full object-cover xl:rounded-3xl">
+        <!-- Product section -->
+        <div class="pt-24 sm:pt-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center" data-aos="fade-up" data-aos-duration="500"
+                    data-aos-easing="ease-in-out">
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our Product</h2>
+                    <p class="mt-2 text-lg leading-8 text-white">Learn how to grow your business with our expert
+                        advice.</p>
                 </div>
-                <div class="mx-auto w-full px-6 lg:px-36 lg:py-28 text-white">
-                    <div class="mx-auto max-w-2xl lg:max-w-none">
-                        <div class="grid max-w-xl grid-cols-1 gap-8 text-base leading-7 lg:max-w-none lg:grid-cols-2">
-                            <div>
-                                <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris
-                                    semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus
-                                    viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat.
-                                    Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.</p>
-                                <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id
-                                    et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in
-                                    vel. Mauris varius vulputate et ultrices hac adipiscing egestas.</p>
+                <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+                    data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <article class="flex flex-col items-start justify-between">
+                        <div class="relative w-full">
+                            <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
+                                alt=""
+                                class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+                        </div>
+                        <div class="max-w-xl">
+                            <div class="mt-8 flex items-center gap-x-4 text-xs">
+                                <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                                <a href="#"
+                                    class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600">Marketing</a>
                             </div>
-                            <div>
-                                <p>Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id
-                                    dignissim eget. Est augue maecenas risus nulla ultrices congue nunc tortor. Enim et
-                                    nesciunt doloremque nesciunt voluptate.</p>
-                                <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id
-                                    et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in
-                                    vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac
-                                    tempor et ut. Ac lorem vel integer orci.</p>
+                            <div class="group relative">
+                                <h3 class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
+                                    <a href="#">
+                                        <span class="absolute inset-0"></span>
+                                        Boost your conversion rate
+                                    </a>
+                                </h3>
+                                <p class="mt-5 line-clamp-3 text-sm leading-6 text-white">Illo sint voluptas.
+                                    Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo
+                                    necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel.
+                                    Iusto corrupti dicta.</p>
+                            </div>
+                            <div class="relative mt-8 flex items-center gap-x-4">
+                                <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    alt="" class="h-10 w-10 rounded-full bg-gray-100">
+                                <div class="text-sm leading-6">
+                                    <p class="font-semibold text-white">
+                                        <a href="#">
+                                            <span class="absolute inset-0"></span>
+                                            Michael Foster
+                                        </a>
+                                    </p>
+                                    <p class="text-white">Co-Founder / CTO</p>
+                                </div>
                             </div>
                         </div>
-                        <dl
-                            class="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mt-28 lg:grid-cols-4">
-                            <div class="flex flex-col-reverse gap-y-3 border-l border-white/20 pl-6">
-                                <dt class="text-base leading-7 text-white">Business was founded</dt>
-                                <dd class="text-3xl font-semibold tracking-tight text-white">2012</dd>
+                    </article>
+                    <article class="flex flex-col items-start justify-between">
+                        <div class="relative w-full">
+                            <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
+                                alt=""
+                                class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+                        </div>
+                        <div class="max-w-xl">
+                            <div class="mt-8 flex items-center gap-x-4 text-xs">
+                                <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                                <a href="#"
+                                    class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600">Marketing</a>
                             </div>
-                            <div class="flex flex-col-reverse gap-y-3 border-l border-white/20 pl-6">
-                                <dt class="text-base leading-7 text-white">People on the team</dt>
-                                <dd class="text-3xl font-semibold tracking-tight text-white">120+</dd>
+                            <div class="group relative">
+                                <h3 class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
+                                    <a href="#">
+                                        <span class="absolute inset-0"></span>
+                                        Boost your conversion rate
+                                    </a>
+                                </h3>
+                                <p class="mt-5 line-clamp-3 text-sm leading-6 text-white">Illo sint voluptas.
+                                    Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo
+                                    necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel.
+                                    Iusto corrupti dicta.</p>
                             </div>
-                            <div class="flex flex-col-reverse gap-y-3 border-l border-white/20 pl-6">
-                                <dt class="text-base leading-7 text-white">Users on the platform</dt>
-                                <dd class="text-3xl font-semibold tracking-tight text-white">250k</dd>
+                            <div class="relative mt-8 flex items-center gap-x-4">
+                                <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    alt="" class="h-10 w-10 rounded-full bg-gray-100">
+                                <div class="text-sm leading-6">
+                                    <p class="font-semibold text-white">
+                                        <a href="#">
+                                            <span class="absolute inset-0"></span>
+                                            Michael Foster
+                                        </a>
+                                    </p>
+                                    <p class="text-white">Co-Founder / CTO</p>
+                                </div>
                             </div>
-                            <div class="flex flex-col-reverse gap-y-3 border-l border-white/20 pl-6">
-                                <dt class="text-base leading-7 text-white">Paid out to creators</dt>
-                                <dd class="text-3xl font-semibold tracking-tight text-white">$70M</dd>
+                        </div>
+                    </article>
+                    <article class="flex flex-col items-start justify-between">
+                        <div class="relative w-full">
+                            <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
+                                alt=""
+                                class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+                        </div>
+                        <div class="max-w-xl">
+                            <div class="mt-8 flex items-center gap-x-4 text-xs">
+                                <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                                <a href="#"
+                                    class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600">Marketing</a>
+                            </div>
+                            <div class="group relative">
+                                <h3 class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
+                                    <a href="#">
+                                        <span class="absolute inset-0"></span>
+                                        Boost your conversion rate
+                                    </a>
+                                </h3>
+                                <p class="mt-5 line-clamp-3 text-sm leading-6 text-white">Illo sint voluptas.
+                                    Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo
+                                    necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel.
+                                    Iusto corrupti dicta.</p>
+                            </div>
+                            <div class="relative mt-8 flex items-center gap-x-4">
+                                <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    alt="" class="h-10 w-10 rounded-full bg-gray-100">
+                                <div class="text-sm leading-6">
+                                    <p class="font-semibold text-white">
+                                        <a href="#">
+                                            <span class="absolute inset-0"></span>
+                                            Michael Foster
+                                        </a>
+                                    </p>
+                                    <p class="text-white">Co-Founder / CTO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- More posts... -->
+                </div>
+                <div class="flex w-full justify-center mt-20" data-aos="fade-up" data-aos-duration="500"
+                    data-aos-easing="ease-in-out">
+                    <a href="#"
+                        class="relative z-10 rounded-full bg-slate-300 px-[78px] py-[21px] font-medium text-black hover:bg-slate-600">More
+                        Post</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Image section -->
+        <div class="mt-32 px-8 sm:mt-40 xl:mx-auto xl:max-w-7xl">
+            <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2894&q=80"
+                alt="" class="aspect-[9/4] w-full object-cover rounded-3xl">
+        </div>
+        <div class="mx-auto w-full px-8 py-10 lg:px-36 lg:py-28 text-white">
+            <div class="mx-auto max-w-2xl lg:max-w-none">
+                <div class="grid max-w-xl grid-cols-1 gap-8 text-base leading-7 lg:max-w-none lg:grid-cols-2">
+                    <div data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out">
+                        <p>VR Lab adalah inovator dalam teknologi virtual reality (VR). tujuan kami untuk
+                            menciptakan pengalaman VR yang memukau dan menarik perhatian dengan inovasi yang dapat
+                            di garap sesuai dengan kebutuhan penguna.</p>
+                        <p class="mt-8">Dengan tim yang terdiri dari desainer, IT, dan Game dev , Divisi VR Lab
+                            mampu menciptakan dunia virtual yang menakjubkan. Mereka menggabungkan grafis
+                            berkualitas tinggi, suara realistis, dan kontrol yang responsif untuk menghadirkan
+                            pengalaman yang tampak nyata.</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-out">
+                        <p>Kami juga menawarkan solusi VR yang beragam, mulai dari pengembangan permainan interaktif
+                            hingga simulasi pelatihan yang memadai. Mereka bekerja sama dengan klien dari berbagai
+                            industri, termasuk pendidikan, perhotelan, dan perawatan kesehatan, untuk menciptakan
+                            pengalaman VR yang sesuai dengan kebutuhan khusus masing-masing.</p>
+                        <p class="mt-8">Potensi kami juga meliputi pengembangan perangkat keras VR. kami juga
+                            menyiapkan , lebih nyaman, dan lebih imersif untuk memastikan pengalaman VR yang optimal
+                            bagi pengguna.</p>
+                    </div>
+                </div>
+                <dl class="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mt-28 lg:grid-cols-4"
+                    data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <div class="flex flex-col-reverse gap-y-3 border-l border-white/20 pl-6">
+                        <dt class="text-base leading-7 text-white">Business was founded</dt>
+                        <dd class="text-3xl font-semibold tracking-tight text-white"><span>2012</span></dd>
+                    </div>
+                    <div class="flex flex-col-reverse gap-y-3 border-l border-white/20 pl-6">
+                        <dt class="text-base leading-7 text-white">People on the team</dt>
+                        <dd class="text-3xl font-semibold tracking-tight text-white"><span>120</span>+</dd>
+                    </div>
+                    <div class="flex flex-col-reverse gap-y-3 border-l border-white/20 pl-6">
+                        <dt class="text-base leading-7 text-white">Users on the platform</dt>
+                        <dd class="text-3xl font-semibold tracking-tight text-white"><span>250</span>k</dd>
+                    </div>
+                    <div class="flex flex-col-reverse gap-y-3 border-l border-white/20 pl-6">
+                        <dt class="text-base leading-7 text-white">Paid out to creators</dt>
+                        <dd class="text-3xl font-semibold tracking-tight text-white">$<span>70</span>M</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+
+        <!-- Team section -->
+        <div class="mx-auto w-full px-6 py-20 lg:px-36 lg:py-28">
+            <div class="mx-auto max-w-full lg:mx-0" data-aos="fade-up" data-aos-duration="500"
+                data-aos-easing="ease-in-out">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our team</h2>
+                <p class="mt-6 text-lg leading-8 text-gray-300">Divisi VR Lab: Tim ahli dalam VR yang menghadirkan
+                    pengalaman luar biasa.
+                    Desainer, pengembang, peneiti, dan manajer proyek yang berdedikasi pada solusi VR terbaik.
+                    Kreativitas, keahlian teknis, dan
+                    penelitian yang mendalam untuk pengalaman VR tak terlupakan.
+                </p>
+            </div>
+            <ul role="list"
+                class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
+                data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out">
+                <li>
+                    <img class="aspect-[14/13] w-full rounded-2xl object-cover"
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                        alt="">
+                    <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Leslie Alexander
+                    </h3>
+                    <p class="text-base leading-7 text-gray-300">Co-Founder / CEO</p>
+                    <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
+                </li>
+                <li>
+                    <img class="aspect-[14/13] w-full rounded-2xl object-cover"
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                        alt="">
+                    <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Leslie Alexander
+                    </h3>
+                    <p class="text-base leading-7 text-gray-300">Co-Founder / CEO</p>
+                    <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
+                </li>
+                <li>
+                    <img class="aspect-[14/13] w-full rounded-2xl object-cover"
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                        alt="">
+                    <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Leslie Alexander
+                    </h3>
+                    <p class="text-base leading-7 text-gray-300">Co-Founder / CEO</p>
+                    <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
+                </li>
+                <li>
+                    <img class="aspect-[14/13] w-full rounded-2xl object-cover"
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                        alt="">
+                    <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Leslie Alexander
+                    </h3>
+                    <p class="text-base leading-7 text-gray-300">Co-Founder / CEO</p>
+                    <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
+                </li>
+
+                <!-- More people... -->
+            </ul>
+        </div>
+
+        <!-- Contact Person section -->
+        <div class="relative isolate">
+            <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+                <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+                    <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+                        <div class="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-white/5 lg:w-1/2">
+                            <svg class="absolute inset-0 h-full w-full stroke-gray-700 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                                aria-hidden="true">
+                                <defs>
+                                    <pattern id="54f88622-e7f8-4f1d-aaf9-c2f5e46dd1f2" width="200" height="200"
+                                        x="100%" y="-1" patternUnits="userSpaceOnUse">
+                                        <path d="M130 200V.5M.5 .5H200" fill="none" />
+                                    </pattern>
+                                </defs>
+                                <svg x="100%" y="-1" class="overflow-visible fill-gray-800/20">
+                                    <path d="M-470.5 0h201v201h-201Z" stroke-width="0" />
+                                </svg>
+                                <rect width="100%" height="100%" stroke-width="0"
+                                    fill="url(#54f88622-e7f8-4f1d-aaf9-c2f5e46dd1f2)" />
+                            </svg>
+                            <div class="absolute -left-56 top-[calc(100%-13rem)] transform-gpu blur-3xl lg:left-[max(-14rem,calc(100%-59rem))] lg:top-[calc(50%-7rem)]"
+                                aria-hidden="true">
+                                <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-br from-[#80caff] to-[#4f46e5] opacity-20"
+                                    style="clip-path: polygon(74.1% 56.1%, 100% 38.6%, 97.5% 73.3%, 85.5% 100%, 80.7% 98.2%, 72.5% 67.7%, 60.2% 37.8%, 52.4% 32.2%, 47.5% 41.9%, 45.2% 65.8%, 27.5% 23.5%, 0.1% 35.4%, 17.9% 0.1%, 27.6% 23.5%, 76.1% 2.6%, 74.1% 56.1%)">
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="text-3xl font-bold tracking-tight text-white">Get in touch</h2>
+                        <p class="mt-6 text-lg leading-8 text-gray-300">Terima kasih atas minat Anda terhadap Divisi VR
+                            Lab! Kami akan senang mendengar dari Anda. Jika Anda memiliki pertanyaan, ingin berdiskusi
+                            tentang proyek VR Anda, atau tertarik bekerja sama dengan kami, jangan ragu untuk menghubungi
+                            kami. Kami siap membantu dan mengeksplorasi peluang yang menarik bersama Anda.</p>
+                        <dl class="mt-10 space-y-4 text-base leading-7 text-gray-300">
+                            <div class="flex gap-x-4">
+                                <dt class="flex-none">
+                                    <span class="sr-only">Address</span>
+                                    <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+                                    </svg>
+                                </dt>
+                                <dd>Jalan Letjend S. Parman Kav.8 1 7<br>Chicago, IL 99191</dd>
+                            </div>
+                            <div class="flex gap-x-4">
+                                <dt class="flex-none">
+                                    <span class="sr-only">Telephone</span>
+                                    <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                    </svg>
+                                </dt>
+                                <dd><a class="hover:text-white" href="tel:+1 (555) 234-5678">+1 (555) 234-5678</a>
+                                </dd>
+                            </div>
+                            <div class="flex gap-x-4">
+                                <dt class="flex-none">
+                                    <span class="sr-only">Email</span>
+                                    <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                    </svg>
+                                </dt>
+                                <dd><a class="hover:text-white" href="mailto:hello@example.com">hello@example.com</a>
+                                </dd>
                             </div>
                         </dl>
                     </div>
                 </div>
-
-                <!-- Team section -->
-                <div class="mx-auto w-full px-6 lg:px-36 lg:py-28">
-                    <div class="mx-auto max-w-full lg:mx-0">
-                        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our team</h2>
-                        <p class="mt-6 text-lg leading-8 text-gray-300">Divisi VR Lab: Tim ahli dalam VR yang menghadirkan
-                            pengalaman luar biasa.
-                            Desainer, pengembang, peneiti, dan manajer proyek yang berdedikasi pada solusi VR terbaik.
-                            Kreativitas, keahlian teknis, dan
-                            penelitian yang mendalam untuk pengalaman VR tak terlupakan.
-                        </p>
-                    </div>
-                    <ul role="list"
-                        class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
-                        <li>
-                            <img class="aspect-[14/13] w-full rounded-2xl object-cover"
-                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                                alt="">
-                            <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Leslie Alexander
-                            </h3>
-                            <p class="text-base leading-7 text-gray-300">Co-Founder / CEO</p>
-                            <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
-                        </li>
-                        <li>
-                            <img class="aspect-[14/13] w-full rounded-2xl object-cover"
-                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                                alt="">
-                            <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Leslie Alexander
-                            </h3>
-                            <p class="text-base leading-7 text-gray-300">Co-Founder / CEO</p>
-                            <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
-                        </li>
-                        <li>
-                            <img class="aspect-[14/13] w-full rounded-2xl object-cover"
-                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                                alt="">
-                            <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Leslie Alexander
-                            </h3>
-                            <p class="text-base leading-7 text-gray-300">Co-Founder / CEO</p>
-                            <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
-                        </li>
-                        <li>
-                            <img class="aspect-[14/13] w-full rounded-2xl object-cover"
-                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                                alt="">
-                            <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Leslie Alexander
-                            </h3>
-                            <p class="text-base leading-7 text-gray-300">Co-Founder / CEO</p>
-                            <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
-                        </li>
-
-                        <!-- More people... -->
-                    </ul>
-                </div>
-
-                <!-- Contact Person section -->
-                <div class="relative isolate">
-                    <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
-                        <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
-                            <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-                                <div
-                                    class="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-white/5 lg:w-1/2">
-                                    <svg class="absolute inset-0 h-full w-full stroke-gray-700 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-                                        aria-hidden="true">
-                                        <defs>
-                                            <pattern id="54f88622-e7f8-4f1d-aaf9-c2f5e46dd1f2" width="200"
-                                                height="200" x="100%" y="-1"
-                                                patternUnits="userSpaceOnUse">
-                                                <path d="M130 200V.5M.5 .5H200" fill="none" />
-                                            </pattern>
-                                        </defs>
-                                        <svg x="100%" y="-1" class="overflow-visible fill-gray-800/20">
-                                            <path d="M-470.5 0h201v201h-201Z" stroke-width="0" />
-                                        </svg>
-                                        <rect width="100%" height="100%" stroke-width="0"
-                                            fill="url(#54f88622-e7f8-4f1d-aaf9-c2f5e46dd1f2)" />
-                                    </svg>
-                                    <div class="absolute -left-56 top-[calc(100%-13rem)] transform-gpu blur-3xl lg:left-[max(-14rem,calc(100%-59rem))] lg:top-[calc(50%-7rem)]"
-                                        aria-hidden="true">
-                                        <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-br from-[#80caff] to-[#4f46e5] opacity-20"
-                                            style="clip-path: polygon(74.1% 56.1%, 100% 38.6%, 97.5% 73.3%, 85.5% 100%, 80.7% 98.2%, 72.5% 67.7%, 60.2% 37.8%, 52.4% 32.2%, 47.5% 41.9%, 45.2% 65.8%, 27.5% 23.5%, 0.1% 35.4%, 17.9% 0.1%, 27.6% 23.5%, 76.1% 2.6%, 74.1% 56.1%)">
-                                        </div>
-                                    </div>
+                <form action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+                    <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+                        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                            <div>
+                                <label for="first-name" class="block text-sm font-semibold leading-6 text-white">First
+                                    name</label>
+                                <div class="mt-2.5">
+                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                        class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
                                 </div>
-                                <h2 class="text-3xl font-bold tracking-tight text-white">Get in touch</h2>
-                                <p class="mt-6 text-lg leading-8 text-gray-300">Proin volutpat consequat porttitor cras
-                                    nullam gravida at. Orci molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-                                    Arcu sed malesuada et magna.</p>
-                                <dl class="mt-10 space-y-4 text-base leading-7 text-gray-300">
-                                    <div class="flex gap-x-4">
-                                        <dt class="flex-none">
-                                            <span class="sr-only">Address</span>
-                                            <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24"
-                                                stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
-                                            </svg>
-                                        </dt>
-                                        <dd>545 Mavis Island<br>Chicago, IL 99191</dd>
-                                    </div>
-                                    <div class="flex gap-x-4">
-                                        <dt class="flex-none">
-                                            <span class="sr-only">Telephone</span>
-                                            <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24"
-                                                stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                                            </svg>
-                                        </dt>
-                                        <dd><a class="hover:text-white" href="tel:+1 (555) 234-5678">+1 (555) 234-5678</a>
-                                        </dd>
-                                    </div>
-                                    <div class="flex gap-x-4">
-                                        <dt class="flex-none">
-                                            <span class="sr-only">Email</span>
-                                            <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24"
-                                                stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                                            </svg>
-                                        </dt>
-                                        <dd><a class="hover:text-white"
-                                                href="mailto:hello@example.com">hello@example.com</a></dd>
-                                    </div>
-                                </dl>
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-sm font-semibold leading-6 text-white">Last
+                                    name</label>
+                                <div class="mt-2.5">
+                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                        class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="email"
+                                    class="block text-sm font-semibold leading-6 text-white">Email</label>
+                                <div class="mt-2.5">
+                                    <input type="email" name="email" id="email" autocomplete="email"
+                                        class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="phone-number" class="block text-sm font-semibold leading-6 text-white">Phone
+                                    number</label>
+                                <div class="mt-2.5">
+                                    <input type="tel" name="phone-number" id="phone-number" autocomplete="tel"
+                                        class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="message"
+                                    class="block text-sm font-semibold leading-6 text-white">Message</label>
+                                <div class="mt-2.5">
+                                    <textarea name="message" id="message" rows="4"
+                                        class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"></textarea>
+                                </div>
                             </div>
                         </div>
-                        <form action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
-                            <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
-                                <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                                    <div>
-                                        <label for="first-name"
-                                            class="block text-sm font-semibold leading-6 text-white">First name</label>
-                                        <div class="mt-2.5">
-                                            <input type="text" name="first-name" id="first-name"
-                                                autocomplete="given-name"
-                                                class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label for="last-name"
-                                            class="block text-sm font-semibold leading-6 text-white">Last name</label>
-                                        <div class="mt-2.5">
-                                            <input type="text" name="last-name" id="last-name"
-                                                autocomplete="family-name"
-                                                class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
-                                        </div>
-                                    </div>
-                                    <div class="sm:col-span-2">
-                                        <label for="email"
-                                            class="block text-sm font-semibold leading-6 text-white">Email</label>
-                                        <div class="mt-2.5">
-                                            <input type="email" name="email" id="email" autocomplete="email"
-                                                class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
-                                        </div>
-                                    </div>
-                                    <div class="sm:col-span-2">
-                                        <label for="phone-number"
-                                            class="block text-sm font-semibold leading-6 text-white">Phone number</label>
-                                        <div class="mt-2.5">
-                                            <input type="tel" name="phone-number" id="phone-number"
-                                                autocomplete="tel"
-                                                class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
-                                        </div>
-                                    </div>
-                                    <div class="sm:col-span-2">
-                                        <label for="message"
-                                            class="block text-sm font-semibold leading-6 text-white">Message</label>
-                                        <div class="mt-2.5">
-                                            <textarea name="message" id="message" rows="4"
-                                                class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mt-8 flex justify-end">
-                                    <button type="submit"
-                                        class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Send
-                                        message</button>
-                                </div>
-                            </div>
-                        </form>
+                        <div class="mt-8 flex justify-end">
+                            <button type="submit"
+                                class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Send
+                                message</button>
+                        </div>
                     </div>
-                </div>
-            </main>
+                </form>
+            </div>
+        </div>
 
-            <!-- Footer -->
 
-            {{-- <footer class="relative w-full bg-[#2B2B2B]" aria-labelledby="footer-heading">
+        <!-- Footer -->
+
+        {{-- <footer class="relative w-full bg-[#2B2B2B]" aria-labelledby="footer-heading">
                 <h2 id="footer-heading" class="sr-only">Footer</h2>
                 <div class="mx-auto max-w-7xl px-6 py-8 lg:px-8">
                     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -620,7 +615,6 @@
                     </div>
                 </div>
             </footer> --}}
-        </div>
 
 
     </main>
