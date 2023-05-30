@@ -10,6 +10,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
         rel="stylesheet">
 
+    {{-- Aos Animation --}}
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     {{-- Tailwind CSS --}}
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -21,7 +24,15 @@
     @yield('container')
 
     @include('partials.footer')
+
+    {{-- JavaScript --}}
     <script src="js/script.js"></script>
+
+    {{-- Aos Animation --}}
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

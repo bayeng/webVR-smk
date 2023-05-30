@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     <div class="flex flex-wrap py-10 lg:px-5 lg:py-0">
-                        <div class="w-full self-center px-10 lg:w-1/2">
+                        <div class="w-full self-center px-10 lg:w-1/2" data-aos="fade-up">
                             <h2 class="text-2xl font-semibold leading-relaxed text-white">Welcome to</h2>
                             <h1 class="text-7xl font-bold mb-5 text-white">VR Lab - SMK</h1>
                             <p class="font-medium leading-relaxed mb-5 text-white">Berinteraksi dengan dunia
@@ -82,7 +82,7 @@
                             </button>
                         </div>
 
-                        <div class="w-full self-end px-9 lg:w-1/2">
+                        <div class="w-full self-end px-9 lg:w-1/2" data-aos="fade-up">
                             <div class="mt-10">
                                 <img src="img/ilustrasi.png" class="max-w-full mx-auto" alt="VR Man">
                             </div>
