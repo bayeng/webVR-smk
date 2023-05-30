@@ -20,10 +20,9 @@
 </head>
 
 <body class="font-montserrat">
-    @include('partials.navbar')
+
     @yield('container')
 
-    @include('partials.footer')
 
     {{-- JavaScript --}}
     <script src="js/script.js"></script>

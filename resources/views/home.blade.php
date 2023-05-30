@@ -1,6 +1,8 @@
 @extends('layouts.main')
 
+
 @section('container')
+    @include('partials.navbar')
     <main class="isolate bg-[#2B2B2B]">
         {{-- <section id="home" class="bg-white pt-36 pb-14 lg:pt-0">
             <div class="container">
@@ -618,4 +620,6 @@
 
 
     </main>
+
+    @include('partials.footer')
 @endsection

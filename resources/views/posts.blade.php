@@ -1,6 +1,9 @@
 @extends('layouts.main')
 
 @section('container')
+
+    @include('partials.navbar')
+
     <section id="blog" class="bg-[#2B2B2B]">
 
         <div class="pt-24 pb-10 sm:pt-32">
@@ -92,7 +95,7 @@
                     <!-- More posts... -->
                 </div>
 
-                <div class="flex justify-center mt-10">
+                <div class="flex justify-center mt-10 ">
                     {{ $posts->links() }}
                 </div>
             </div>
@@ -187,4 +190,7 @@
             {{ $posts->links() }}
         </div> --}}
     </section>
+
+    @include('partials.footer')
+
 @endsection

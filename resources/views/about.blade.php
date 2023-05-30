@@ -1,6 +1,9 @@
 @extends('layouts.main')
 
 @section('container')
-<h1>Halaman about </h1>
-    
+    @include('partials.navbar')
+
+    <h1>Halaman about </h1>
+
+    @include('partials.footer')
 @endsection
