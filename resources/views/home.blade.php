@@ -128,8 +128,6 @@
                                     Iusto corrupti dicta.</p>
                             </div>
                             <div class="relative mt-8 flex items-center gap-x-4">
-                                <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                    alt="" class="h-10 w-10 rounded-full bg-gray-100">
                                 <div class="text-sm leading-6">
                                     <p class="font-semibold text-white">
                                         <a href="#">
@@ -137,7 +135,6 @@
                                             Michael Foster
                                         </a>
                                     </p>
-                                    <p class="text-white">Co-Founder / CTO</p>
                                 </div>
                             </div>
                         </div>
@@ -168,8 +165,6 @@
                                     Iusto corrupti dicta.</p>
                             </div>
                             <div class="relative mt-8 flex items-center gap-x-4">
-                                <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                    alt="" class="h-10 w-10 rounded-full bg-gray-100">
                                 <div class="text-sm leading-6">
                                     <p class="font-semibold text-white">
                                         <a href="#">
@@ -177,7 +172,6 @@
                                             Michael Foster
                                         </a>
                                     </p>
-                                    <p class="text-white">Co-Founder / CTO</p>
                                 </div>
                             </div>
                         </div>
@@ -208,8 +202,6 @@
                                     Iusto corrupti dicta.</p>
                             </div>
                             <div class="relative mt-8 flex items-center gap-x-4">
-                                <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                    alt="" class="h-10 w-10 rounded-full bg-gray-100">
                                 <div class="text-sm leading-6">
                                     <p class="font-semibold text-white">
                                         <a href="#">
@@ -217,7 +209,6 @@
                                             Michael Foster
                                         </a>
                                     </p>
-                                    <p class="text-white">Co-Founder / CTO</p>
                                 </div>
                             </div>
                         </div>
@@ -283,62 +274,6 @@
                     </div>
                 </dl>
             </div>
-        </div>
-
-        <!-- Team section -->
-        <div class="mx-auto w-full px-6 py-20 lg:px-36 lg:py-28">
-            <div class="mx-auto max-w-full lg:mx-0" data-aos="fade-up" data-aos-duration="500"
-                data-aos-easing="ease-in-out">
-                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our team</h2>
-                <p class="mt-6 text-lg leading-8 text-gray-300">Divisi VR Lab: Tim ahli dalam VR yang menghadirkan
-                    pengalaman luar biasa.
-                    Desainer, pengembang, peneiti, dan manajer proyek yang berdedikasi pada solusi VR terbaik.
-                    Kreativitas, keahlian teknis, dan
-                    penelitian yang mendalam untuk pengalaman VR tak terlupakan.
-                </p>
-            </div>
-            <ul role="list"
-                class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
-                data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out">
-                <li>
-                    <img class="aspect-[14/13] w-full rounded-2xl object-cover"
-                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                        alt="">
-                    <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Leslie Alexander
-                    </h3>
-                    <p class="text-base leading-7 text-gray-300">Co-Founder / CEO</p>
-                    <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
-                </li>
-                <li>
-                    <img class="aspect-[14/13] w-full rounded-2xl object-cover"
-                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                        alt="">
-                    <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Leslie Alexander
-                    </h3>
-                    <p class="text-base leading-7 text-gray-300">Co-Founder / CEO</p>
-                    <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
-                </li>
-                <li>
-                    <img class="aspect-[14/13] w-full rounded-2xl object-cover"
-                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                        alt="">
-                    <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Leslie Alexander
-                    </h3>
-                    <p class="text-base leading-7 text-gray-300">Co-Founder / CEO</p>
-                    <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
-                </li>
-                <li>
-                    <img class="aspect-[14/13] w-full rounded-2xl object-cover"
-                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                        alt="">
-                    <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Leslie Alexander
-                    </h3>
-                    <p class="text-base leading-7 text-gray-300">Co-Founder / CEO</p>
-                    <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
-                </li>
-
-                <!-- More people... -->
-            </ul>
         </div>
 
         <!-- Contact Person section -->
