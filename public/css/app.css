@@ -811,6 +811,10 @@ select {
 .m-auto {
   margin: auto;
 }
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -826,10 +830,6 @@ select {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-}
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
 }
 .-mr-96 {
   margin-right: -24rem;
@@ -1112,9 +1112,6 @@ select {
 }
 .justify-between {
   justify-content: space-between;
-}
-.justify-evenly {
-  justify-content: space-evenly;
 }
 .gap-3 {
   gap: 0.75rem;
