@@ -59,7 +59,9 @@
     <div class="container">
         <div class="relative flex items-center justify-between">
             <div class="px-4">
-                <img src="img/logo-vr.png" class="h-16 w-16" href="#home" alt="">
+                <a href="/">
+                    <img src="img/logo-vr.png" class="h-16 w-16" alt="VR Lab">
+                </a>
             </div>
             <div class="flex items-center px-4">
                 <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
