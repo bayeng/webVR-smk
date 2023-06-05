@@ -55,11 +55,6 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="text-center alert alert-danger alert-dismissible fade show" role="alert">
-                    {{ session('loginError') }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
             @endif
 
             <div class="w-full max-w-sm mx-auto lg:w-96">
