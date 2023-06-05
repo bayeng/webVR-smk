@@ -4,33 +4,33 @@
     @include('partials.navbar')
     <section id="post">
         <div class="bg-[#2B2B2B]">
-            <div class="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
-                <div class="grid grid-cols-1 items-start gap-x-8 gap-y-16 lg:grid-cols-2">
+            <div class="max-w-2xl px-4 py-24 mx-auto sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
+                <div class="grid items-start grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
                     <div>
-                        <div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100">
+                        <div class="overflow-hidden bg-gray-100 rounded-lg aspect-h-1 aspect-w-1">
                             @if ($post->image)
                                 <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->category->name }}"
-                                    class="h-full w-full object-cover object-center">
+                                    class="object-cover object-center w-full h-full">
                             @else
                                 <img src="https://source.unsplash.com/1200x800?{{ $post->category->name }}"
-                                    alt="{{ $post->category->name }}" class="h-full w-full object-cover object-center">
+                                    alt="{{ $post->category->name }}" class="object-cover object-center w-full h-full">
                             @endif
                         </div>
-                        {{-- <div class="mt-4 grid grid-cols-2 gap-4 sm:mt-6 sm:gap-6 lg:mt-8 lg:gap-8">
-                            <div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100">
+                        {{-- <div class="grid grid-cols-2 gap-4 mt-4 sm:mt-6 sm:gap-6 lg:mt-8 lg:gap-8">
+                            <div class="overflow-hidden bg-gray-100 rounded-lg aspect-h-1 aspect-w-1">
                                 <img src="https://source.unsplash.com/1200x1200?{{ $post->category->name }}"
                                     alt="{{ $post->category->name }}">
                             </div>
-                            <div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100">
+                            <div class="overflow-hidden bg-gray-100 rounded-lg aspect-h-1 aspect-w-1">
                                 <img src="https://source.unsplash.com/600x600?{{ $post->category->name }}"
-                                    alt="{{ $post->category->name }}" class="h-full w-full object-cover object-center">
+                                    alt="{{ $post->category->name }}" class="object-cover object-center w-full h-full">
                             </div>
                         </div> --}}
                     </div>
 
                     <div>
-                        <div class="border-b border-gray-200 pb-10">
-                            <div class="flex items-center flex-row">
+                        <div class="pb-10 border-b border-gray-200">
+                            <div class="flex flex-row items-center">
                                 <h2 class="font-medium text-gray-400">
                                     by <a href="/blog?author={{ $post->user->username }}">{{ $post->user->name }}</a>
                                 </h2>

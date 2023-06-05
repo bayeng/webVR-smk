@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full bg-[#2B2B2B]">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
@@ -19,7 +21,7 @@
     <title>VR Lab - SMK | {{ $title }} </title>
 </head>
 
-<body class="font-montserrat">
+<body class="h-full font-montserrat">
 
     @yield('container')
 
