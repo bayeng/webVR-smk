@@ -40,7 +40,7 @@
 
             @if (session()->has('loginError'))
                 <div class="p-4 rounded-md bg-yellow-50">
-                    <div class="flex">
+                    <div class="flex items-center">
                         <div class="flex-shrink-0">
                             <svg class="w-5 h-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd"
