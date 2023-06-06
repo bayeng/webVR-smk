@@ -7,8 +7,8 @@
     <section id="blog" class="bg-[#2B2B2B]">
 
         <div class="pt-24 pb-10 sm:pt-32">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="mx-auto max-w-2xl text-center" data-aos="fade-up" data-aos-duration="500"
+            <div class="px-6 mx-auto max-w-7xl lg:px-8">
+                <div class="max-w-2xl mx-auto text-center" data-aos="fade-up" data-aos-duration="500"
                     data-aos-easing="ease-in-out">
                     <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our Product</h2>
                     <p class="mt-2 text-lg leading-8 text-white">{{ $title }}</p>
@@ -28,7 +28,7 @@
                             </div>
                             <input type="text" id="simple-search"
                                 class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 block w-full pl-10 p-2.5 placeholder-gray-400"
-                                placeholder="Search" required>
+                                placeholder="Search" name="search" value="{{ request('search') }}" required>
                         </div>
                         <button type="submit"
                             class="p-2.5 ml-2 text-sm font-medium text-white bg-slate-600 rounded-lg border border-slate-400 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300">
@@ -43,7 +43,7 @@
                 </div>
 
                 <!-- Card Product -->
-                <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+                <div class="grid max-w-2xl grid-cols-1 mx-auto mt-16 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
                     data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
                     @if ($posts->count())
                         @foreach ($posts as $post)
@@ -61,12 +61,12 @@
                                     @endif
                                 </div>
                                 <div class="max-w-xl">
-                                    <div class="mt-8 flex items-center gap-x-4 text-xs">
+                                    <div class="flex items-center mt-8 text-xs gap-x-4">
                                         <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
                                         <a href="#"
                                             class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600">{{ $post->category->name }}</a>
                                     </div>
-                                    <div class="group relative">
+                                    <div class="relative group">
                                         <h3
                                             class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
                                             <a href="/posts/{{ $post->slug }}">
@@ -74,9 +74,9 @@
                                                 {{ $post->title }}
                                             </a>
                                         </h3>
-                                        <p class="mt-5 line-clamp-3 text-sm leading-6 text-white">{{ $post->excerpt }}</p>
+                                        <p class="mt-5 text-sm leading-6 text-white line-clamp-3">{{ $post->excerpt }}</p>
                                     </div>
-                                    <div class="relative mt-8 flex items-center gap-x-4">
+                                    <div class="relative flex items-center mt-8 gap-x-4">
 
                                         <div class="text-sm leading-6">
                                             <p class="font-semibold text-white">
@@ -116,7 +116,7 @@
                         @if (request('user'))
                             <input type="hidden" name="user" value="{{ request('user') }}">
                         @endif
-                        <div class="input-group mb-3">
+                        <div class="mb-3 input-group">
                             <input type="text" class="form-control" name="search" value="{{ request('search') }}"
                                 placeholder="Search...">
                             <button class="btn btn-primary" type="submit">Button</button>
@@ -126,7 +126,7 @@
             </div>
         </div>
         @if ($posts->count())
-            <div class="card mb-3">
+            <div class="mb-3 card">
                 @if ($posts[0]->image)
                     <div style="max-height: 350px; overflow:hidden;">
                         <img class="mt-3" src="{{ asset('storage/' . $posts[0]->image) }}"
@@ -136,7 +136,7 @@
                     <img src="https://source.unsplash.com/1200x400?{{ $posts[0]->category->name }}" class="card-img-top"
                         alt="...">
                 @endif
-                <div class="card-body text-center">
+                <div class="text-center card-body">
                     <h3 class="card-title">{{ $posts[0]->title }}</h3>
                     <small class="text-muted">
                         <p>by <a href="/blog?user={{ $posts[0]->user->username }}"
@@ -155,8 +155,8 @@
                 <div class="row">
                     @foreach ($posts->skip(1) as $post)
                         <div class="col-md-4">
-                            <div class="card mb-3" style="width: 18rem;">
-                                <div class="position-absolute px-2 py-1" style="background-color: rgba(0,0,0,0.7)"><a
+                            <div class="mb-3 card" style="width: 18rem;">
+                                <div class="px-2 py-1 position-absolute" style="background-color: rgba(0,0,0,0.7)"><a
                                         href=""
                                         class="text-white text-decoration-none">{{ $post->category->slug }}</a></div>
                                 @if ($post->image)

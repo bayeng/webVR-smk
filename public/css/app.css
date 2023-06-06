@@ -1121,6 +1121,9 @@ select {
 .flex-wrap {
   flex-wrap: wrap;
 }
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
 .items-start {
   align-items: flex-start;
 }
@@ -1487,6 +1490,10 @@ select {
   padding-left: 0px;
   padding-right: 0px;
 }
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1569,6 +1576,10 @@ select {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 .font-bold {
   font-weight: 700;
