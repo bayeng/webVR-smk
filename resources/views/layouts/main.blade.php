@@ -21,7 +21,7 @@
     <title>VR Lab - SMK | {{ $title }} </title>
 </head>
 
-<body class="h-full font-montserrat">
+<body class="h-full overflow-x-hidden font-montserrat">
 
     @yield('container')
 

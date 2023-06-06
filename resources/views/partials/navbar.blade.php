@@ -55,19 +55,19 @@
     </div>
 </nav> --}}
 
-<header class="bg-transparent absolute top-0 left-0 right-0 w-full flex items-center z-10 justify-center">
+<header class="absolute top-0 left-0 right-0 z-10 flex items-center justify-center w-full bg-transparent">
     <div class="container">
         <div class="relative flex items-center justify-between">
             <div class="px-4">
                 <a href="/">
-                    <img src="img/logo-vr.png" class="h-16 w-16" alt="VR Lab">
+                    <img src="img/logo-vr.png" class="w-16 h-16" alt="VR Lab">
                 </a>
             </div>
             <div class="flex items-center px-4">
-                <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
-                    <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
-                    <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                    <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+                <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+                    <span class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
+                    <span class="transition duration-300 ease-in-out hamburger-line"></span>
+                    <span class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"></span>
                 </button>
 
                 <nav id="nav-menu"
@@ -89,11 +89,44 @@
                             <a href="/categories"
                                 class="mx-8 flex py-2 text-base group-hover:text-slate-600 {{ Request::is('categories') ? 'text-white' : 'text-slate-400' }}">Categories</a>
                         </li>
-                        <li class="group">
-                            <a href="/login"
-                                class="mx-8 flex py-2 text-base group-hover:text-slate-600 {{ Request::is('login') ? 'text-white' : 'text-slate-400' }}">Login
-                                <span aria-hidden="true">&rarr;</span></a>
-                        </li>
+                        @auth
+                            <li class="relative group">
+                                <button type="button" id="dropdown"
+                                    class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-600 hover:bg-gray-600 hover:bg-opacity-50"
+                                    id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                    Welcome, {{ auth()->user()->name }}
+                                    <svg class="w-5 h-5 -mr-1 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <div id="dropdown-list"
+                                    class="hidden lg:absolute bg-[#2B2B2B] my-4 px-4 py-2 rounded-lg right-0 drop-shadow-lg ring-1 ring-inset ring-gray-600 transition ease-out duration-100">
+                                    <ul class="space-y-2 text-white lg:w-48">
+                                        <li>
+                                            <a href="/dashboard"
+                                                class="flex p-2 rounded-md hover:bg-gray-600 hover:bg-opacity-50">Dashboard</a>
+                                        </li>
+                                        <li>
+                                            <form action="/logout" method="POST">
+                                                @csrf
+                                                <button type="submit"
+                                                    class="rounded-md bg-red-600/95 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20">Logout</button>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        @else
+                            <li class="group">
+                                <a href="/login"
+                                    class="mx-8 flex py-2 text-base group-hover:text-slate-600 {{ Request::is('login') ? 'text-white' : 'text-slate-400' }}">Login
+                                    <span aria-hidden="true">&rarr;</span></a>
+                            </li>
+                        @endauth
                     </ul>
                 </nav>
             </div>
