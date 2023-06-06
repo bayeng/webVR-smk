@@ -103,7 +103,7 @@
                                     </svg>
                                 </button>
                                 <div id="dropdown-list"
-                                    class="hidden lg:absolute bg-[#2B2B2B] my-4 px-4 py-2 rounded-lg right-0 drop-shadow-lg ring-1 ring-inset ring-gray-600 transition ease-out duration-100">
+                                    class="hidden lg:absolute bg-[#2B2B2B] my-4 px-4 py-2 rounded-lg right-0 drop-shadow-lg ring-1 ring-inset ring-gray-600">
                                     <ul class="space-y-2 text-white lg:w-48">
                                         <li>
                                             <a href="/dashboard"
