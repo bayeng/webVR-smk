@@ -32,7 +32,7 @@ Route::get('/', function () {
         "active" => "home",
 
     ]);
-});
+})->name('home');
 
 Route::get('/about', function () {
     return view('about', [
