@@ -2,7 +2,7 @@
 
 @section('container')
     <div class="flex min-h-screen">
-        <div class="flex flex-col justify-center flex-1 px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+        <div class="flex flex-col justify-center flex-1 px-4 py-8 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
             <div class="w-full max-w-sm mx-auto lg:w-96">
                 <div>
                     <a href="/">
@@ -16,7 +16,7 @@
                         <form action="/register" method="POST" class="space-y-6">
                             @csrf
                             <div>
-                                <label for="name" class="block text-sm font-medium leading-6 text-white">Name
+                                <label for="name" class="block text-sm font-medium leading-6 text-white">Full Name
                                 </label>
                                 <div class="">
                                     <input id="name" name="name" type="text" required
@@ -61,13 +61,23 @@
                                 <div class="">
                                     <input id="password" name="password" type="password" autocomplete="current-password"
                                         required
-                                        class="block w-full rounded-md border-0 bg-white/5 py-1.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6">
+                                        class="block w-full rounded-md border-0 bg-white/5 py-1.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6 @error('password') is-invalid @enderror">
                                 </div>
                                 @error('password')
                                     <div class="flex items-center mt-1 ml-1 text-xs font-medium tracking-wide text-red-500">
                                         {{ $message }}
                                     </div>
                                 @enderror
+                            </div>
+
+                            <div>
+                                <label for="password" class="block text-sm font-medium leading-6 text-white">Confirm
+                                    Password</label>
+                                <div class="">
+                                    <input id="password" name="password_confirmation" type="password"
+                                        autocomplete="current-password" required
+                                        class="block w-full rounded-md border-0 bg-white/5 py-1.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6 @error('password') is-invalid @enderror">
+                                </div>
                             </div>
 
                             <div>
