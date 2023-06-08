@@ -5,7 +5,7 @@
 
     <section id="about" class="text-white">
         <div class="container">
-            <div class="relative overflow-hidden isolate pt-14">
+            <div class="relative pb-20 overflow-hidden isolate pt-14">
                 <div class="flex flex-wrap items-start px-5 py-16 lg:px-5">
                     <div class="w-full px-10 space-y-10 lg:w-1/2">
                         <h1 class="text-5xl font-medium">We are Team who’s love Create some beneficial Product in creative
@@ -24,6 +24,44 @@
                             suscipit. Aliquam sed enim eu tellus euismod viverra. Curabitur ac metus mauris. Sed venenatis
                             nulla
                             a est rhoncus fringilla.</p>
+                        <div class="mt-10 ml-24 space-y-10">
+                            <div class="flex flex-row items-center space-x-10">
+                                <i class="fa-solid fa-handshake fa-2xl"></i>
+                                <div>
+                                    <h2>Trust</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet eros vitae neque
+                                        consequat, eget vulputate dolor consequat. In porttitor dolor sed eros efficitur
+                                        fringilla.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-row items-center space-x-10">
+                                <i class="fa-solid fa-handshake fa-2xl"></i>
+                                <div>
+                                    <h2>Trust</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet eros vitae neque
+                                        consequat, eget vulputate dolor consequat. In porttitor dolor sed eros efficitur
+                                        fringilla.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-row items-center space-x-10">
+                                <i class="fa-solid fa-handshake fa-2xl"></i>
+                                <div>
+                                    <h2>Trust</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet eros vitae neque
+                                        consequat, eget vulputate dolor consequat. In porttitor dolor sed eros efficitur
+                                        fringilla.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-row items-center space-x-10">
+                                <i class="fa-solid fa-handshake fa-2xl"></i>
+                                <div>
+                                    <h2>Trust</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet eros vitae neque
+                                        consequat, eget vulputate dolor consequat. In porttitor dolor sed eros efficitur
+                                        fringilla.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="flex w-full gap-8 px-10 mt-20 lg:mt-0 lg:w-1/2">
                         <div class="flex-none pt-32 ml-auto space-y-8 w-44 sm:pt-0">

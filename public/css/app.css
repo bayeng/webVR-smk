@@ -888,6 +888,9 @@ select {
 .ml-2 {
   margin-left: 0.5rem;
 }
+.ml-24 {
+  margin-left: 6rem;
+}
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -1212,6 +1215,11 @@ select {
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .self-end {
   align-self: flex-end;
 }
@@ -1494,6 +1502,10 @@ select {
 .py-\[21px\] {
   padding-top: 21px;
   padding-bottom: 21px;
+}
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 .pb-10 {
   padding-bottom: 2.5rem;
@@ -2103,10 +2115,6 @@ select {
     padding-bottom: 8rem;
   }
 
-  .sm\:pl-20 {
-    padding-left: 5rem;
-  }
-
   .sm\:pt-0 {
     padding-top: 0px;
   }
@@ -2269,10 +2277,6 @@ select {
     width: 24rem;
   }
 
-  .lg\:w-12 {
-    width: 3rem;
-  }
-
   .lg\:max-w-7xl {
     max-width: 80rem;
   }
@@ -2359,10 +2363,6 @@ select {
   .lg\:py-48 {
     padding-top: 12rem;
     padding-bottom: 12rem;
-  }
-
-  .lg\:pl-0 {
-    padding-left: 0px;
   }
 
   .lg\:pt-0 {

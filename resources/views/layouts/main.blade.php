@@ -12,6 +12,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
         rel="stylesheet">
 
+    {{-- Font Awesome --}}
+    <script src="https://kit.fontawesome.com/06d64fda6d.js" crossorigin="anonymous"></script>
+
     {{-- Aos Animation --}}
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
