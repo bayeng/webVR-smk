@@ -48,6 +48,7 @@ class DashboardPostController extends Controller
             'slug'=>'required|unique:posts',
             'category_id'=>'required',
             'image'=>'image|file|max:2048',
+            'video'=>'required',
             'body'=>'required'
         ]);
 
@@ -57,7 +58,7 @@ class DashboardPostController extends Controller
 
         $validateData['user_id'] = auth()->user()->id;
         $validateData['excerpt'] = Str::limit(strip_tags( $request->body),100);
-
+        $validateData['video'] = str_replace('https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/', $validateData['video']);
         Post::create($validateData);
 
         return redirect('/dashboard/posts')->with('success','New post has been added');
@@ -103,6 +104,7 @@ class DashboardPostController extends Controller
             'title'=>'required|max:255',
             'category_id'=>'required',
             'image'=>'image|file|max:2048',
+            'video'=>'required',
             'body'=>'required'
         ]);
 
@@ -120,6 +122,7 @@ class DashboardPostController extends Controller
 
         $validateData['user_id'] = auth()->user()->id;
         $validateData['excerpt'] = Str::limit(strip_tags( $request->body),100);
+        $validateData['video'] = str_replace('https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/', $validateData['video']);
 
         Post::where('id',$post->id)
             ->update($validateData);
