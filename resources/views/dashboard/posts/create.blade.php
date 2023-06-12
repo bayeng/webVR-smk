@@ -49,6 +49,10 @@
           @enderror
         </div>
         <div class="mb-3">
+          <label for="slug" class="form-label">Link Youtube</label>
+          <input type="text" class="form-control" name="video">
+        </div>
+        <div class="mb-3">
           <label for="body" class="form-label">Body</label>
           @error('body')
             <p class="text-danger">{{ $message }}</p>
