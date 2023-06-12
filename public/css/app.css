@@ -2183,6 +2183,15 @@ select {
   .md\:border-t-0 {
     border-top-width: 0px;
   }
+
+  .md\:p-20 {
+    padding: 5rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1024px) {
