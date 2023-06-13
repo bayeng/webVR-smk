@@ -47,7 +47,7 @@
                     data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
                     @if ($posts->count())
                         @foreach ($posts as $post)
-                            <article class="flex flex-col items-start justify-between">
+                            <article class="flex flex-col items-start">
                                 <div class="relative w-full">
                                     @if ($post->image)
                                         <img src="{{ asset('storage/' . $post->image) }}" alt=""
@@ -63,7 +63,7 @@
                                 <div class="max-w-xl">
                                     <div class="flex items-center mt-8 text-xs gap-x-4">
                                         <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-                                        <a href="#"
+                                        <a href="blog?category={{ $post->category->slug }}"
                                             class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600">{{ $post->category->name }}</a>
                                     </div>
                                     <div class="relative group">
