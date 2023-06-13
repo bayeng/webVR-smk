@@ -48,12 +48,24 @@ class DashboardPostController extends Controller
             'slug'=>'required|unique:posts',
             'category_id'=>'required',
             'image'=>'image|file|max:2048',
+            'image2'=>'image|file|max:2048',
+            'image3'=>'image|file|max:2048',
+            'image4'=>'image|file|max:2048',
             'video'=>'required',
             'body'=>'required'
         ]);
 
         if($request->file('image')){
             $validateData['image'] = $request->file('image')->store('post-image');
+        }
+        if($request->file('image2')){
+            $validateData['image2'] = $request->file('image2')->store('post-image');
+        }
+        if($request->file('image3')){
+            $validateData['image3'] = $request->file('image3')->store('post-image');
+        }
+        if($request->file('image4')){
+            $validateData['image4'] = $request->file('image4')->store('post-image');
         }
 
         $validateData['user_id'] = auth()->user()->id;
