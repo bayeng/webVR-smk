@@ -988,6 +988,9 @@ select {
 .hidden {
   display: none;
 }
+.aspect-\[1\/1\] {
+  aspect-ratio: 1/1;
+}
 .aspect-\[1155\/678\] {
   aspect-ratio: 1155/678;
 }
@@ -997,17 +1000,14 @@ select {
 .aspect-\[2\/3\] {
   aspect-ratio: 2/3;
 }
+.aspect-\[3\/1\] {
+  aspect-ratio: 3/1;
+}
 .aspect-\[6\/5\] {
   aspect-ratio: 6/5;
 }
 .aspect-\[9\/4\] {
   aspect-ratio: 9/4;
-}
-.aspect-3\/1 {
-  aspect-ratio: 3 / 1;
-}
-.aspect-\[3\/1\] {
-  aspect-ratio: 3/1;
 }
 .h-16 {
   height: 4rem;
@@ -1458,9 +1458,6 @@ select {
 .p-6 {
   padding: 1.5rem;
 }
-.p-20 {
-  padding: 5rem;
-}
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1552,18 +1549,6 @@ select {
 .py-\[21px\] {
   padding-top: 21px;
   padding-bottom: 21px;
-}
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-.px-40 {
-  padding-left: 10rem;
-  padding-right: 10rem;
 }
 .pb-10 {
   padding-bottom: 2.5rem;
@@ -2231,8 +2216,16 @@ select {
 
 @media (min-width: 768px) {
 
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .md\:grid {
@@ -2319,6 +2312,10 @@ select {
 
   .lg\:mt-28 {
     margin-top: 7rem;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:block {

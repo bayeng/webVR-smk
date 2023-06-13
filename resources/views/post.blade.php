@@ -58,7 +58,8 @@
         </div> --}}
         <div class="w-full">
             <div class="pt-14">
-                <div class="flex flex-col items-center justify-center px-6 mx-auto space-y-5 max-w-7xl lg:px-20 lg:py-10">
+                <div
+                    class="flex flex-col items-center justify-center px-6 mx-auto mb-5 space-y-5 lg:mb-0 max-w-7xl lg:px-20 lg:py-10">
                     <h1 class="text-xl font-semibold text-center md:text-4xl">{{ $post->title }}</h1>
                     <div class="flex flex-row items-center">
                         <h2 class="font-medium text-gray-400">
@@ -69,11 +70,10 @@
                     </div>
                 </div>
                 @if ($post->image)
-                    <img src="{{ asset('storage/' . $post->image) }}" class="rounded-xl aspect-[3/1] object-cover"
-                        alt="">
+                    <img src="{{ asset('storage/' . $post->image) }}" class="aspect-[3/1] object-cover" alt="">
                 @else
                     <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
-                        class="rounded-xl aspect-[3/1] object-cover" alt="">
+                        class="aspect-[3/1] object-cover" alt="">
                 @endif
                 <div class="px-5 py-4 space-y-5 lg:space-y-20 lg:py-20 lg:px-24">
 
@@ -86,16 +86,16 @@
                         vulputate dolor consequat. In porttitor dolor sed eros efficitur fringilla. </p>
                     <div class="flex flex-row space-x-6">
                         <div class="w-full h-fit">
-                            <img src="https://source.unsplash.com/800x800?product" class="rounded-2xl"
-                                alt="Gambar Produk 1">
+                            <img src="https://source.unsplash.com/800x800?product"
+                                class="rounded-2xl aspect-[1/1] object-cover" alt="Gambar Produk 1">
                         </div>
                         <div class="w-full h-fit">
-                            <img src="https://source.unsplash.com/800x800?product" class="rounded-2xl"
-                                alt="Gambar Produk 2">
+                            <img src="https://source.unsplash.com/800x800?product"
+                                class="rounded-2xl aspect-[1/1] object-cover" alt="Gambar Produk 2">
                         </div>
                         <div class="flex flex-col w-full space-y-3 h-fit">
-                            <img src="https://source.unsplash.com/800x800?product" class="rounded-2xl"
-                                alt="Gambar Produk 3">
+                            <img src="https://source.unsplash.com/800x800?product"
+                                class="rounded-2xl aspect-[1/1] object-cover" alt="Gambar Produk 3">
                         </div>
                     </div>
                     <div class="flex flex-row flex-wrap items-start">
