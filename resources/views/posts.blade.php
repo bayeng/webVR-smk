@@ -31,7 +31,7 @@
                                 placeholder="Search" name="search" value="{{ request('search') }}" required>
                         </div>
                         <button type="submit"
-                            class="p-2.5 ml-2 text-sm font-medium text-white bg-slate-600 rounded-lg border border-slate-400 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300">
+                            class="p-2.5 ml-2 text-sm font-medium text-white bg-slate-600 rounded-lg border border-slate-400 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 transition duration-300 ease-in-out">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -60,32 +60,39 @@
                                         <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
                                     @endif
                                 </div>
-                                <div class="max-w-xl">
+                                <div class="w-full">
                                     <div class="flex items-center mt-8 text-xs gap-x-4">
                                         <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
                                         <a href="blog?category={{ $post->category->slug }}"
-                                            class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600">{{ $post->category->name }}</a>
+                                            class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600 hover:text-white transition duration-300 ease-in-out">{{ $post->category->name }}</a>
                                     </div>
                                     <div class="relative group">
                                         <h3
-                                            class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
+                                            class="mt-3 text-lg font-semibold leading-6 text-white transition duration-300 ease-in-out group-hover:text-gray-600">
                                             <a href="/posts/{{ $post->slug }}">
                                                 <span class="absolute inset-0"></span>
                                                 {{ $post->title }}
                                             </a>
                                         </h3>
-                                        <p class="mt-5 text-sm leading-6 text-white line-clamp-3">{{ $post->excerpt }}</p>
+                                        <p class="mt-5 text-sm leading-6 text-gray-400 line-clamp-3">{{ $post->excerpt }}
+                                        </p>
                                     </div>
-                                    <div class="relative flex items-center mt-8 gap-x-4">
-
-                                        <div class="text-sm leading-6">
-                                            <p class="font-semibold text-white">
-                                                <a href="#">
-                                                    <span class="absolute inset-0"></span>
-                                                    {{ $post->user->name }}
-                                                </a>
-                                            </p>
-
+                                    <div class="mt-8 gap-x-4">
+                                        <div class="relative flex items-center justify-between text-sm">
+                                            <div>
+                                                <p class="font-semibold text-white">
+                                                    <a href="/blog?user={{ $post->user->username }}"
+                                                        class="transition duration-300 ease-in-out hover:text-gray-600">
+                                                        <span class="absolute inset-0"></span>
+                                                        {{ $post->user->name }}
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <a href="/posts/{{ $post->slug }}"
+                                                    class="relative z-10 rounded-xl bg-slate-600 px-3 py-1.5 font-medium text-white hover:bg-[#06E3FF] hover:text-black transition duration-300 ease-in-out">Read
+                                                    More</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
