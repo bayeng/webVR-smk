@@ -116,6 +116,9 @@ class DashboardPostController extends Controller
             'title'=>'required|max:255',
             'category_id'=>'required',
             'image'=>'image|file|max:2048',
+            'image2'=>'image|file|max:2048',
+            'image3'=>'image|file|max:2048',
+            'image4'=>'image|file|max:2048',
             'video'=>'required',
             'body'=>'required'
         ]);
@@ -130,6 +133,24 @@ class DashboardPostController extends Controller
                 Storage::delete($request->oldImage);
             }
             $validateData['image'] = $request->file('image')->store('post-image');
+        }
+        if($request->file('image2')){
+            if($request->oldImage2){
+                Storage::delete($request->oldImage2);
+            }
+            $validateData['image2'] = $request->file('image2')->store('post-image');
+        }
+        if($request->file('image3')){
+            if($request->oldImage3){
+                Storage::delete($request->oldImage3);
+            }
+            $validateData['image3'] = $request->file('image3')->store('post-image');
+        }
+        if($request->file('image4')){
+            if($request->oldImage4){
+                Storage::delete($request->oldImage4);
+            }
+            $validateData['image4'] = $request->file('image4')->store('post-image');
         }
 
         $validateData['user_id'] = auth()->user()->id;
@@ -152,6 +173,15 @@ class DashboardPostController extends Controller
     {   
         if($post->image){
             Storage::delete($post->image);
+        }
+        if($post->image2){
+            Storage::delete($post->image2);
+        }
+        if($post->image3){
+            Storage::delete($post->image3);
+        }
+        if($post->image4){
+            Storage::delete($post->image3);
         }
         Post::destroy($post->id);
 
