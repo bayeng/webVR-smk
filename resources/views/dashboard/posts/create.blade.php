@@ -56,7 +56,7 @@
                     <label for="image" class="form-label @error('image') is-invalid @enderror">Choose Your Image
                         1</label>
                     <img class="mt-3 img-preview img-fluid col-sm-5">
-                    <input class="form-control" type="file" id="image" name="image" onchange="previewImage()">
+                    <input class="form-control" type="file" id="image2" name="image" onchange="previewImage()">
                     @error('image')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -67,7 +67,7 @@
                     <label for="image" class="form-label @error('image') is-invalid @enderror">Choose Your Image
                         2</label>
                     <img class="mt-3 img-preview img-fluid col-sm-5">
-                    <input class="form-control" type="file" id="image" name="image" onchange="previewImage()">
+                    <input class="form-control" type="file" id="image3" name="image" onchange="previewImage()">
                     @error('image')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -78,7 +78,7 @@
                     <label for="image" class="form-label @error('image') is-invalid @enderror">Choose Your Image
                         3</label>
                     <img class="mt-3 img-preview img-fluid col-sm-5">
-                    <input class="form-control" type="file" id="image" name="image" onchange="previewImage()">
+                    <input class="form-control" type="file" id="image4" name="image" onchange="previewImage()">
                     @error('image')
                         <div class="invalid-feedback">
                             {{ $message }}
