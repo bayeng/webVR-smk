@@ -86,16 +86,16 @@
                         vulputate dolor consequat. In porttitor dolor sed eros efficitur fringilla. </p>
                     <div class="flex flex-row space-x-6">
                         <div class="w-full h-fit">
-                            <img src="https://source.unsplash.com/800x800?product"
-                                class="rounded-2xl aspect-[1/1] object-cover" alt="Gambar Produk 1">
+                            <img src="{{ asset('storage/' . $post->image2) }}" class="rounded-2xl aspect-[1/1] object-cover"
+                                alt="Gambar Produk 1">
                         </div>
                         <div class="w-full h-fit">
-                            <img src="https://source.unsplash.com/800x800?product"
-                                class="rounded-2xl aspect-[1/1] object-cover" alt="Gambar Produk 2">
+                            <img src="{{ asset('storage/' . $post->image3) }}" class="rounded-2xl aspect-[1/1] object-cover"
+                                alt="Gambar Produk 2">
                         </div>
                         <div class="flex flex-col w-full space-y-3 h-fit">
-                            <img src="https://source.unsplash.com/800x800?product"
-                                class="rounded-2xl aspect-[1/1] object-cover" alt="Gambar Produk 3">
+                            <img src="{{ asset('storage/' . $post->image4) }}" class="rounded-2xl aspect-[1/1] object-cover"
+                                alt="Gambar Produk 3">
                         </div>
                     </div>
                     <div class="flex flex-row flex-wrap items-start">
@@ -106,30 +106,10 @@
                                 creative
                                 industries
                             </h1>
-                            <p class="text-base w-full xl:w-[480px] font-normal">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                                elit.
-                                Sed
-                                aliquet
-                                eros
-                                vitae neque
-                                consequat,
-                                eget vulputate dolor consequat. In porttitor dolor sed eros efficitur fringilla.
-                                Vestibulum
-                                ante
-                                ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse
-                                consequat
-                                mauris risus, a aliquet velit consectetur sed. Maecenas id malesuada felis, in bibendum
-                                odio.
-                                Nullam fermentum urna non pharetra commodo. Ut a ex ac elit luctus bibendum. Sed id nunc
-                                id
-                                metus aliquet suscipit. Aliquam sed enim eu tellus euismod viverra. Curabitur ac metus
-                                mauris.
-                                Sed venenatis nulla a est rhoncus fringilla.</p>
+                            <p class="text-base w-full xl:w-[480px] font-normal">{{ $post->body }}</p>
                         </div>
                         <div class="flex justify-end w-full h-full my-10 lg :my-0 lg:w-1/2 rounded-xl">
-                            <iframe class="w-full h-[480px] rounded-lg shadow-lg"
-                                src="{{ $post->video }}" frameborder="0"
+                            <iframe class="w-full h-[480px] rounded-lg shadow-lg" src="{{ $post->video }}" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen=""></iframe>
                         </div>
