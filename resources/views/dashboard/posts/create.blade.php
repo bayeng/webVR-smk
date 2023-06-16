@@ -57,7 +57,7 @@
                         1</label>
                     <img class="mt-3 img-preview img-fluid col-sm-5">
                     <input class="form-control" type="file" id="image2" name="image2" onchange="previewImage()">
-                    @error('image')
+                    @error('image2')
                         <div class="invalid-feedback">
                             {{ $message }}
                         </div>
@@ -68,7 +68,7 @@
                         2</label>
                     <img class="mt-3 img-preview img-fluid col-sm-5">
                     <input class="form-control" type="file" id="image3" name="image3" onchange="previewImage()">
-                    @error('image')
+                    @error('image3')
                         <div class="invalid-feedback">
                             {{ $message }}
                         </div>
@@ -79,16 +79,19 @@
                         3</label>
                     <img class="mt-3 img-preview img-fluid col-sm-5">
                     <input class="form-control" type="file" id="image4" name="image4" onchange="previewImage()">
-                    @error('image')
+                    @error('image4')
                         <div class="invalid-feedback">
                             {{ $message }}
                         </div>
                     @enderror
                 </div>
             </div>
-
+            <div>
+                <label for="slogan" class="form-label">Slogan</label>
+                <input type="text" class="form-control" name="slogan">
+            </div>
             <div class="">
-                <label for="slug" class="form-label">Link Youtube</label>
+                <label for="video" class="form-label">Link Youtube</label>
                 <input type="text" class="form-control" name="video">
             </div>
             <div class="mb-3">

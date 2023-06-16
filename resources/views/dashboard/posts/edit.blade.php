@@ -107,8 +107,19 @@
                 </div>
             </div>
             <div class="">
-                <label for="slug" class="form-label">Link Youtube</label>
-                <input type="text" class="form-control" id="video" name="video" value="{{ old('body', $post->video)}}">
+                <label for="slogan" class="form-label">Slogan</label>
+                <input type="text" class="form-control" id="slogan" name="slogan"
+                    value="{{ old('slogan', $post->slogan) }}">
+                @error('slogan')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+            <div class="">
+                <label for="video" class="form-label">Link Youtube</label>
+                <input type="text" class="form-control" id="video" name="video"
+                    value="{{ old('video', $post->video) }}">
                 @error('video')
                     <div class="invalid-feedback">
                         {{ $message }}

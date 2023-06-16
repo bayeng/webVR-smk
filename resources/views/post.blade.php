@@ -100,13 +100,8 @@
                     </div>
                     <div class="flex flex-row flex-wrap items-start">
                         <div class="flex flex-col w-full pr-5 lg:w-1/2">
-                            <h1 class="mb-10 text-4xl font-medium lg:mb-16">We are Team who’s love Create some
-                                beneficial
-                                Product in
-                                creative
-                                industries
-                            </h1>
-                            <p class="text-base w-full xl:w-[480px] font-normal">{{ $post->body }}</p>
+                            <h1 class="mb-10 text-4xl font-medium lg:mb-16">{{ $post->slogan }}</h1>
+                            <p class="text-base w-full xl:w-[480px] font-normal">{!! $post->body !!}</p>
                         </div>
                         <div class="flex justify-end w-full h-full my-10 lg :my-0 lg:w-1/2 rounded-xl">
                             <iframe class="w-full h-[480px] rounded-lg shadow-lg" src="{{ $post->video }}" frameborder="0"
