@@ -106,6 +106,15 @@
                     @enderror
                 </div>
             </div>
+            <div class="">
+                <label for="slug" class="form-label">Link Youtube</label>
+                <input type="text" class="form-control" id="video" name="video" value="{{ old('body', $post->video)}}">
+                @error('video')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
             <div class="mb-3">
                 <label for="body" class="form-label">Body</label>
                 @error('body')

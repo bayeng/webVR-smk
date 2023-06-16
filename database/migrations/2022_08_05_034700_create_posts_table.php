@@ -23,6 +23,7 @@ class CreatePostsTable extends Migration
             $table->string('image3')->nullable();
             $table->string('image4')->nullable();
             $table->string('video')->nullable();
+            $table->string('slogan');
             $table->text('excerpt');
             $table->string('slug')->unique();
             $table->text('body');
