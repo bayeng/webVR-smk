@@ -70,7 +70,8 @@
                     </div>
                 </div>
                 @if ($post->image)
-                    <img src="{{ asset('storage/' . $post->image) }}" class="aspect-[3/1] object-cover" alt="">
+                    <img src="{{ asset('storage/' . $post->image) }}" class="object-cover aspect-[3/1]"
+                        alt="Image {{ $post->title }}">
                 @else
                     <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
                         class="aspect-[3/1] object-cover" alt="">

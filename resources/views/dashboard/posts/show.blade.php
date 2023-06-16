@@ -5,7 +5,8 @@
         <div class="my-3 row">
             <div class="col-lg-8">
                 <h2>{{ $post->title }}</h2>
-                <a href="" class="btn btn-warning"><span data-feather="edit" class="align-text-bottom"></span>Edit</a>
+                <a href="/dashboard/posts/{{ $post->slug }}/edit" class="btn btn-warning"><span data-feather="edit"
+                        class="align-text-bottom"></span>Edit</a>
                 <form action="/dashboard/posts/{{ $post->slug }}" method="post" class="d-inline">
                     @method('delete')
                     @csrf
