@@ -71,7 +71,6 @@ class DashboardPostController extends Controller
 
         $validateData['user_id'] = auth()->user()->id;
         $validateData['excerpt'] = Str::limit(strip_tags($request->body), 100);
-        $validateData['body'] = strip_tags($request->body);
 
         $validateData['video'] = str_replace('https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/', $validateData['video']);
         $validateData['video'] = str_replace('https://youtu.be/', 'https://www.youtube.com/embed/', $validateData['video']);
