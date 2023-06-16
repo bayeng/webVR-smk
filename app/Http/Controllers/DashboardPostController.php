@@ -121,10 +121,10 @@ class DashboardPostController extends Controller
         $rules = ([
             'title' => 'required|max:255',
             'category_id' => 'required',
-            'image' => 'required|image|file|max:2048',
-            'image2' => 'required|image|file|max:2048',
-            'image3' => 'required|image|file|max:2048',
-            'image4' => 'required|image|file|max:2048',
+            'image' => 'image|file|max:2048',
+            'image2' => 'image|file|max:2048',
+            'image3' => 'image|file|max:2048',
+            'image4' => 'image|file|max:2048',
             'slogan' => 'required',
             'video' => 'required',
             'body' => 'required'
