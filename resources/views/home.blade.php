@@ -60,7 +60,7 @@
         <div class="relative overflow-hidden isolate pt-14">
             <div class="absolute inset-x-0 overflow-hidden -top-40 -z-10 transform-gpu blur-3xl sm:-top-80"
                 aria-hidden="true">
-                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#06E3FF] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
                     style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
                 </div>
             </div>
@@ -113,7 +113,7 @@
                             <div class="flex items-center mt-8 text-xs gap-x-4">
                                 <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
                                 <a href="#"
-                                    class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600">Marketing</a>
+                                    class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600 transition duration-300 ease-in-out">Marketing</a>
                             </div>
                             <div class="relative group">
                                 <h3 class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
@@ -219,7 +219,7 @@
                 <div class="flex justify-center w-full mt-20" data-aos="fade-up" data-aos-duration="500"
                     data-aos-easing="ease-in-out">
                     <a href="#"
-                        class="relative z-10 rounded-full bg-slate-300 px-[78px] py-[21px] font-medium text-black hover:bg-slate-600">More
+                        class="relative z-10 rounded-full bg-slate-300 px-[78px] py-[21px] font-medium text-black hover:bg-slate-600 transition duration-300 ease-in-out">More
                         Post</a>
                 </div>
             </div>
@@ -298,7 +298,7 @@
                             </svg>
                             <div class="absolute -left-56 top-[calc(100%-13rem)] transform-gpu blur-3xl lg:left-[max(-14rem,calc(100%-59rem))] lg:top-[calc(50%-7rem)]"
                                 aria-hidden="true">
-                                <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-br from-[#80caff] to-[#4f46e5] opacity-20"
+                                <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-br from-[#06E3FF] to-[#4f46e5] opacity-20"
                                     style="clip-path: polygon(74.1% 56.1%, 100% 38.6%, 97.5% 73.3%, 85.5% 100%, 80.7% 98.2%, 72.5% 67.7%, 60.2% 37.8%, 52.4% 32.2%, 47.5% 41.9%, 45.2% 65.8%, 27.5% 23.5%, 0.1% 35.4%, 17.9% 0.1%, 27.6% 23.5%, 76.1% 2.6%, 74.1% 56.1%)">
                                 </div>
                             </div>
@@ -318,7 +318,7 @@
                                             d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
                                     </svg>
                                 </dt>
-                                <dd>Jalan Letjend S. Parman Kav.8 1 7<br>Chicago, IL 99191</dd>
+                                <dd>Jalan Letjend S. Parman Kav.8 1 7<br>Jakarta Barat</dd>
                             </div>
                             <div class="flex gap-x-4">
                                 <dt class="flex-none">
@@ -329,7 +329,8 @@
                                             d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                                     </svg>
                                 </dt>
-                                <dd><a class="hover:text-white" href="tel:+62 (021) 5667375">+62 (021) 5667375</a>
+                                <dd><a class="transition duration-300 ease-in-out hover:text-white"
+                                        href="tel:+62 (021) 5667375">+62 (021) 5667375</a>
                                 </dd>
                             </div>
                             <div class="flex gap-x-4">
@@ -341,7 +342,7 @@
                                             d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                                     </svg>
                                 </dt>
-                                <dd><a class="hover:text-white"
+                                <dd><a class="transition duration-300 ease-in-out hover:text-white"
                                         href="mailto:corporate_comm@telkom.co.id">corporate_comm@telkom.co.id</a>
                                 </dd>
                             </div>
@@ -394,7 +395,7 @@
                         </div>
                         <div class="flex justify-end mt-8">
                             <button type="submit"
-                                class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Send
+                                class="rounded-md bg-[#06E3FF] px-3.5 py-2.5 text-center text-sm font-semibold text-[#2B2B2B] shadow-sm hover:bg-slate-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 transition duration-300 ease-in-out">Send
                                 message</button>
                         </div>
                     </div>

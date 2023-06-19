@@ -808,11 +808,11 @@ select {
 .z-10 {
   z-index: 10;
 }
-.m-auto {
-  margin: auto;
-}
 .m-3 {
   margin: 0.75rem;
+}
+.m-auto {
+  margin: auto;
 }
 .-mx-1 {
   margin-left: -0.25rem;
@@ -963,9 +963,6 @@ select {
 .mt-8 {
   margin-top: 2rem;
 }
-.mt-14 {
-  margin-top: 3.5rem;
-}
 .line-clamp-3 {
   overflow: hidden;
   display: -webkit-box;
@@ -1081,9 +1078,6 @@ select {
 .w-full {
   width: 100%;
 }
-.w-80 {
-  width: 20rem;
-}
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1156,9 +1150,6 @@ select {
 .flex-row {
   flex-direction: row;
 }
-.flex-row-reverse {
-  flex-direction: row-reverse;
-}
 .flex-col {
   flex-direction: column;
 }
@@ -1189,11 +1180,11 @@ select {
 .gap-3 {
   gap: 0.75rem;
 }
-.gap-8 {
-  gap: 2rem;
-}
 .gap-4 {
   gap: 1rem;
+}
+.gap-8 {
+  gap: 2rem;
 }
 .gap-x-1 {
   -moz-column-gap: 0.25rem;
@@ -1434,6 +1425,11 @@ select {
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
+.from-\[\#06E3FF\] {
+  --tw-gradient-from: #06E3FF var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(6 227 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
 .via-gray-900\/40 {
   --tw-gradient-to: rgb(17 24 39 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), rgb(17 24 39 / 0.4) var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -1619,14 +1615,14 @@ select {
 .pt-36 {
   padding-top: 9rem;
 }
+.pt-5 {
+  padding-top: 1.25rem;
+}
 .pt-8 {
   padding-top: 2rem;
 }
 .pt-80 {
   padding-top: 20rem;
-}
-.pt-5 {
-  padding-top: 1.25rem;
 }
 .text-center {
   text-align: center;
