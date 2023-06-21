@@ -60,7 +60,7 @@
         <div class="relative flex items-center justify-between">
             <div class="px-4">
                 <a href="/">
-                    <img src="img/logo-vr.png" class="w-16 h-16" alt="VR Lab">
+                    <img src="{{ asset('/img/logo-vr.png') }}" class="w-16 h-16" alt="VR Lab">
                 </a>
             </div>
             <div class="flex items-center px-4">

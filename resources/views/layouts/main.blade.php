@@ -30,7 +30,7 @@
 
 
     {{-- JavaScript --}}
-    <script src="js/script.js"></script>
+    <script src="{{ asset('/js/script.js') }}"></script>
 
     {{-- Aos Animation --}}
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

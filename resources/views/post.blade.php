@@ -106,8 +106,8 @@
                         </div>
                         <div class="flex justify-end w-full h-full my-10 lg :my-0 lg:w-1/2 rounded-xl">
                             <iframe class="w-full h-[480px] rounded-lg shadow-lg" src="{{ $post->video }}" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen=""></iframe>
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
