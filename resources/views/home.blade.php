@@ -77,7 +77,7 @@
                     <button type="button"
                         class="inline-flex items-center rounded-full bg-[#06E3FF] px-[78px] py-[21px] text-lg font-semibold text-[#2B2B2B] shadow-sm hover:bg-slate-500 hover:text-white transition duration-300 ease-in-out">
                         <h1>Experience</h1>
-                        <img src="{{asset('img/icon/vr.png')}}" class="h-[32px] mx-[20px]" alt="VR button">
+                        <img src="{{asset('/img/icon/vr.png')}}" class="h-[32px] mx-[20px]" alt="VR button">
                     </button>
                 </div>
 
