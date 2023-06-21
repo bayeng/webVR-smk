@@ -4,7 +4,7 @@
 
     @include('partials.navbar')
 
-    <section id="blog" class="bg-[#2B2B2B]">
+    <section id="product" class="bg-[#2B2B2B]">
 
         <div class="pt-24 pb-10 sm:pt-32">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
@@ -69,7 +69,7 @@
                                     <div class="relative group">
                                         <h3
                                             class="mt-3 text-lg font-semibold leading-6 text-white transition duration-300 ease-in-out group-hover:text-gray-600">
-                                            <a href="/posts/{{ $post->slug }}">
+                                            <a href="/product/{{ $post->slug }}">
                                                 <span class="absolute inset-0"></span>
                                                 {{ $post->title }}
                                             </a>

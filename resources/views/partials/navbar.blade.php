@@ -78,8 +78,8 @@
                                 class="mx-8 flex py-2 text-base transition duration-300 ease-in-out group-hover:text-slate-600 {{ Request::is('/') ? 'text-white' : 'text-slate-400' }}">Home</a>
                         </li>
                         <li class="group">
-                            <a href="/blog"
-                                class="mx-8 flex py-2 text-base transition duration-300 ease-in-out group-hover:text-slate-600 {{ Request::is('blog') ? 'text-white' : 'text-slate-400' }}">Blog</a>
+                            <a href="/product"
+                                class="mx-8 flex py-2 text-base transition duration-300 ease-in-out group-hover:text-slate-600 {{ Request::is('product') ? 'text-white' : 'text-slate-400' }}">Product</a>
                         </li>
                         <li class="group">
                             <a href="/about"

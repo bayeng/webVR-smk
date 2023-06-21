@@ -102,117 +102,60 @@
                 </div>
                 <div class="grid max-w-2xl grid-cols-1 mx-auto mt-16 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
                     data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out">
-                    <article class="flex flex-col items-start justify-between">
-                        <div class="relative w-full">
-                            <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
-                                alt=""
-                                class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-                            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-                        </div>
-                        <div class="max-w-xl">
-                            <div class="flex items-center mt-8 text-xs gap-x-4">
-                                <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-                                <a href="#"
-                                    class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600 transition duration-300 ease-in-out">Marketing</a>
-                            </div>
-                            <div class="relative group">
-                                <h3 class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
-                                    <a href="#">
-                                        <span class="absolute inset-0"></span>
-                                        Boost your conversion rate
-                                    </a>
-                                </h3>
-                                <p class="mt-5 text-sm leading-6 text-white line-clamp-3">Illo sint voluptas.
-                                    Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo
-                                    necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel.
-                                    Iusto corrupti dicta.</p>
-                            </div>
-                            <div class="relative flex items-center mt-8 gap-x-4">
-                                <div class="text-sm leading-6">
-                                    <p class="font-semibold text-white">
-                                        <a href="#">
-                                            <span class="absolute inset-0"></span>
-                                            Michael Foster
-                                        </a>
-                                    </p>
+                    @if ($posts->count())
+                        @foreach ($posts as $post)
+                            <article class="flex flex-col items-start">
+                                <div class="relative w-full">
+                                    @if ($post->image)
+                                        <img src="{{ asset('storage/' . $post->image) }}" alt=""
+                                            class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                                        <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+                                    @else
+                                        <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
+                                            alt=""
+                                            class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                                        <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+                                    @endif
                                 </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="flex flex-col items-start justify-between">
-                        <div class="relative w-full">
-                            <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
-                                alt=""
-                                class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-                            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-                        </div>
-                        <div class="max-w-xl">
-                            <div class="flex items-center mt-8 text-xs gap-x-4">
-                                <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-                                <a href="#"
-                                    class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600">Marketing</a>
-                            </div>
-                            <div class="relative group">
-                                <h3 class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
-                                    <a href="#">
-                                        <span class="absolute inset-0"></span>
-                                        Boost your conversion rate
-                                    </a>
-                                </h3>
-                                <p class="mt-5 text-sm leading-6 text-white line-clamp-3">Illo sint voluptas.
-                                    Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo
-                                    necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel.
-                                    Iusto corrupti dicta.</p>
-                            </div>
-                            <div class="relative flex items-center mt-8 gap-x-4">
-                                <div class="text-sm leading-6">
-                                    <p class="font-semibold text-white">
-                                        <a href="#">
-                                            <span class="absolute inset-0"></span>
-                                            Michael Foster
-                                        </a>
-                                    </p>
+                                <div class="w-full">
+                                    <div class="flex items-center mt-8 text-xs gap-x-4">
+                                        <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+                                        <a href="blog?category={{ $post->category->slug }}"
+                                            class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600 hover:text-white transition duration-300 ease-in-out">{{ $post->category->name }}</a>
+                                    </div>
+                                    <div class="relative group">
+                                        <h3
+                                            class="mt-3 text-lg font-semibold leading-6 text-white transition duration-300 ease-in-out group-hover:text-gray-600">
+                                            <a href="/posts/{{ $post->slug }}">
+                                                <span class="absolute inset-0"></span>
+                                                {{ $post->title }}
+                                            </a>
+                                        </h3>
+                                        <p class="mt-5 text-sm leading-6 text-gray-400 line-clamp-3">{{ $post->excerpt }}
+                                        </p>
+                                    </div>
+                                    <div class="mt-8 gap-x-4">
+                                        <div class="relative flex items-center justify-between text-sm">
+                                            <div>
+                                                <p class="font-semibold text-white">
+                                                    <a href="/blog?user={{ $post->user->username }}"
+                                                        class="transition duration-300 ease-in-out hover:text-gray-600">
+                                                        <span class="absolute inset-0"></span>
+                                                        {{ $post->user->name }}
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <a href="/product/{{ $post->slug }}"
+                                                    class="relative z-10 rounded-xl bg-slate-600 px-3 py-1.5 font-medium text-white hover:bg-[#06E3FF] hover:text-black transition duration-300 ease-in-out">Read
+                                                    More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="flex flex-col items-start justify-between">
-                        <div class="relative w-full">
-                            <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
-                                alt=""
-                                class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-                            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-                        </div>
-                        <div class="max-w-xl">
-                            <div class="flex items-center mt-8 text-xs gap-x-4">
-                                <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-                                <a href="#"
-                                    class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600">Marketing</a>
-                            </div>
-                            <div class="relative group">
-                                <h3 class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
-                                    <a href="#">
-                                        <span class="absolute inset-0"></span>
-                                        Boost your conversion rate
-                                    </a>
-                                </h3>
-                                <p class="mt-5 text-sm leading-6 text-white line-clamp-3">Illo sint voluptas.
-                                    Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo
-                                    necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel.
-                                    Iusto corrupti dicta.</p>
-                            </div>
-                            <div class="relative flex items-center mt-8 gap-x-4">
-                                <div class="text-sm leading-6">
-                                    <p class="font-semibold text-white">
-                                        <a href="#">
-                                            <span class="absolute inset-0"></span>
-                                            Michael Foster
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                            </article>
+                        @endforeach
+                    @endif
 
                     <!-- More posts... -->
                 </div>

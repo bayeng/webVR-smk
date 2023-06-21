@@ -36,9 +36,9 @@ Route::get('/about', function () {
     ]);
 });
 
-route::get('/blog', [PostController::class, 'index']);
+route::get('/product', [PostController::class, 'index']);
 
-route::get('posts/{post:slug}', [PostController::class, 'show']);
+route::get('product/{post:slug}', [PostController::class, 'show']);
 
 route::get('/categories/{category:slug}', function (Category $category) {
     return view('posts', [
@@ -86,7 +86,7 @@ route::get('/dashboard', function () {
 
 route::resource('/dashboard/categories', AdminCategoryController::class)->except('show')->middleware('admin');
 
-Route::get('/generate', function (){
+Route::get('/generate', function () {
     \Illuminate\Support\Facades\Artisan::call('storage:link');
     echo 'ok';
 });
