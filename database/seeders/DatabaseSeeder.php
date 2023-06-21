@@ -48,18 +48,35 @@ class DatabaseSeeder extends Seeder
             'slug'=>'personal',
             
         ]);
+        Category::create([
+            'name'=>'Backend',
+            'slug'=>'Backend',
+            
+        ]);
+        Category::create([
+            'name'=>'FrontEnd',
+            'slug'=>'FrontEnd',
+            
+        ]);
+        Category::create([
+            'name'=>'DevOps',
+            'slug'=>'DevOps',
+            
+        ]);
 
-        Post::factory(20)->create();
+        // Post::factory(20)->create();
 
-        // Post::create([
-        //     'title'=>'judul pertama',
-        //     'slug'=>'judul-pertama',
-        //     'excerpt'=>'lorem ipsum tot vok',
-        //     'body'=>'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam, magni harum quae laboriosam obcaecati eveniet cumque fugiat impedit ea corrupti eius voluptates aliquid vitae quaerat? Consequatur, nobis reprehenderit quis quod vel recusandae perferendis consectetur libero, enim rerum culpa, eum voluptatum expedita eaque sapiente corrupti ea nam possimus? Error, eveniet!',
-        //     'category_id'=>1,
-        //     'user_id'=>1
+        Post::create([
+            'title'=>'judul pertama',
+            'slug'=>'judul-pertama',
+            'excerpt'=>'lorem ipsum tot vok',
+            'body'=>'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam, magni harum quae laboriosam obcaecati eveniet cumque fugiat impedit ea corrupti eius voluptates aliquid vitae quaerat? Consequatur, nobis reprehenderit quis quod vel recusandae perferendis consectetur libero, enim rerum culpa, eum voluptatum expedita eaque sapiente corrupti ea nam possimus? Error, eveniet!',
+            'category_id'=>1,
+            'slogan'=>'jaya jaya luar biasa',
+            'user_id'=>1,
+            'video'=>'https://www.youtube.com/embed/yUKRkPKg5_U'
 
-        // ]);
+        ]);
 
         // Post::create([
         //     'title'=>'judul kedua',
