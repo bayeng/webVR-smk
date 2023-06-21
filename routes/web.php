@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminCategoryController;
 use App\Http\Controllers\DashboardPostController;
+use App\Http\Controllers\HomeController;
 use App\Models\User;
 use App\Models\Post;
 use App\Models\Category;
@@ -26,13 +27,7 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return view('home', [
-        "title" => "Home",
-        "active" => "home",
-
-    ]);
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/about', function () {
     return view('about', [
@@ -90,3 +85,8 @@ route::get('/dashboard', function () {
 })->middleware('auth');
 
 route::resource('/dashboard/categories', AdminCategoryController::class)->except('show')->middleware('admin');
+
+Route::get('/generate', function (){
+    \Illuminate\Support\Facades\Artisan::call('storage:link');
+    echo 'ok';
+});

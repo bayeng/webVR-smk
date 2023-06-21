@@ -13,10 +13,7 @@
                 <h5 class="my-3">{{auth()->user()->name}}</h5>
                 <p class="text-muted mb-1">{{auth()->user()->username}}</p>
                 <p class="text-muted mb-4">{{auth()->user()->email}}</p>
-                <div class="d-flex justify-content-center mb-2">
-                  <button type="button" class="btn btn-primary">Follow</button>
-                  <button type="button" class="btn btn-outline-primary ms-1">Message</button>
-                </div>
+               
               </div>
             </div>
           </div>
