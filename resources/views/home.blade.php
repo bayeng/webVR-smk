@@ -74,11 +74,11 @@
                         headset VR, sarana input seperti sensor gerakan, dan
                         visual yang ciamik </p>
 
-                    <a href="/product">
+                    <a href="/about">
                         <button type="button"
                             class="inline-flex items-center rounded-full bg-[#06E3FF] px-[78px] py-[21px] text-lg font-semibold text-[#2B2B2B] shadow-sm hover:bg-slate-500 hover:text-white transition duration-300 ease-in-out">
                             <h1>Experience</h1>
-                            
+
                         </button>
                     </a>
                 </div>

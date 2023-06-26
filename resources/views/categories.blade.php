@@ -20,7 +20,7 @@
                                 <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
                                 <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
                                 <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
-                                    <a href="blog?category={{ $category->slug }}">
+                                    <a href="product?category={{ $category->slug }}">
                                         <span class="absolute inset-0"></span>
                                         {{ $category->name }}
                                     </a>
