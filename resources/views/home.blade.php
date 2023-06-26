@@ -163,7 +163,7 @@
                 </div>
                 <div class="flex justify-center w-full mt-20" data-aos="fade-up" data-aos-duration="500"
                     data-aos-easing="ease-in-out">
-                    <a href="#"
+                    <a href="/product"
                         class="relative z-10 rounded-full bg-slate-300 px-[78px] py-[21px] font-medium text-black hover:bg-slate-600 transition duration-300 ease-in-out">More
                         Post</a>
                 </div>
