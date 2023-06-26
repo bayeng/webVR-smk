@@ -74,11 +74,13 @@
                         headset VR, sarana input seperti sensor gerakan, dan
                         visual yang ciamik </p>
 
-                    <button type="button"
-                        class="inline-flex items-center rounded-full bg-[#06E3FF] px-[78px] py-[21px] text-lg font-semibold text-[#2B2B2B] shadow-sm hover:bg-slate-500 hover:text-white transition duration-300 ease-in-out">
-                        <h1>Experience</h1>
-                        <img src="{{asset('/img/icon/vr.png')}}" class="h-[32px] mx-[20px]" alt="VR button">
-                    </button>
+                    <a href="/product">
+                        <button type="button"
+                            class="inline-flex items-center rounded-full bg-[#06E3FF] px-[78px] py-[21px] text-lg font-semibold text-[#2B2B2B] shadow-sm hover:bg-slate-500 hover:text-white transition duration-300 ease-in-out">
+                            <h1>Experience</h1>
+                            <img src="{{asset('/img/icon/vr.png')}}" class="h-[32px] mx-[20px]" alt="VR button">
+                        </button>
+                    </a>
                 </div>
 
                 <div class="self-end w-full px-9 lg:w-1/2" data-aos="fade-up" data-aos-duration="500"
@@ -126,7 +128,7 @@
                                     <div class="relative group">
                                         <h3
                                             class="mt-3 text-lg font-semibold leading-6 text-white transition duration-300 ease-in-out group-hover:text-gray-600">
-                                            <a href="/posts/{{ $post->slug }}">
+                                            <a href="/product/{{ $post->slug }}">
                                                 <span class="absolute inset-0"></span>
                                                 {{ $post->title }}
                                             </a>

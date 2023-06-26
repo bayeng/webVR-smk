@@ -63,7 +63,7 @@
                                 <div class="w-full">
                                     <div class="flex items-center mt-8 text-xs gap-x-4">
                                         <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-                                        <a href="blog?category={{ $post->category->slug }}"
+                                        <a href="product?category={{ $post->category->slug }}"
                                             class="relative z-10 rounded-full bg-[#06E3FF] px-3 py-1.5 font-medium text-black hover:bg-slate-600 hover:text-white transition duration-300 ease-in-out">{{ $post->category->name }}</a>
                                     </div>
                                     <div class="relative group">
@@ -89,7 +89,7 @@
                                                 </p>
                                             </div>
                                             <div>
-                                                <a href="/posts/{{ $post->slug }}"
+                                                <a href="/product/{{ $post->slug }}"
                                                     class="relative z-10 rounded-xl bg-slate-600 px-3 py-1.5 font-medium text-white hover:bg-[#06E3FF] hover:text-black transition duration-300 ease-in-out">Read
                                                     More</a>
                                             </div>
