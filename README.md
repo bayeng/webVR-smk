@@ -14,7 +14,7 @@ Berikut adalah langkah-langkah untuk melakukan setup proyek Laravel ini:
 
  **Clone Repositori**
 
-`git clone https://github.com/username/nama-proyek.git`
+`git clone https://github.com/VRLab-ITDRI/webVR-smk`
 
 1. **pindah ke dalam directory**
    - `$ cd webVR-smk`
@@ -28,10 +28,10 @@ Berikut adalah langkah-langkah untuk melakukan setup proyek Laravel ini:
 4. **Buat key generate**
    - `$ php artisan key:generate`
 
-1. **migrate database**
+5. **migrate database**
    - `$ php artisan migrate`
 
-2. **jalankan aplikasi**
+6. **jalankan aplikasi**
    - `$ php artisan serve`
 
 
