@@ -81,7 +81,7 @@
                                         <div class="relative flex items-center justify-between text-sm">
                                             <div>
                                                 <p class="font-semibold text-white">
-                                                    <a href="/blog?user={{ $post->user->username }}"
+                                                    <a href="/product?user={{ $post->user->username }}"
                                                         class="transition duration-300 ease-in-out hover:text-gray-600">
                                                         <span class="absolute inset-0"></span>
                                                         {{ $post->user->name }}
